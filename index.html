@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
 
 <head>
     <title>Levyn's Website</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Wichtig ist, dass das eigene CSS nach dem Bootstrap-CSS kommt, damit wir Dinge von Bootstrap überschreiben können. -->
+    <link rel="stylesheet" href="/style.css">
+
     <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96">
     <meta charset="UTF-8">
     <meta name="msapplication-TileColor" content="#242424">
@@ -16,9 +20,8 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-gray" id="shadow">
+<body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-shadow">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/profil_picture.png" alt="Brand Picture">
@@ -64,62 +67,50 @@
         </div>
     </nav>
 
-    <div class="container-fluid containter-background">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <h2 class="title text-center">Über mich</h2>
-            </div>
-            <!--
-            <div class="col-md-3">
-                rechts
-            </div>
-            -->
-        </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div class="d-flex justify-content-center">
-                    <a href="/ueber_mich/">
-                        <div class="card text-white bg-secondary mb-3 card-ueber-mich" style="border: none;">
-                            <div class="card-body">
-                                <h5 class="card-title card-color">Über mich</h5>
-                                <p class="card-text card-color">Ich bin 12 Jahre alt und lebe in der Schweiz. Meine
-                                    Hobbys:</p>
-                                <p class="card-text card-list card-color">- Programmieren<br>- Tischtennis<br>-
-                                    Unihockey<br>- Fotografieren</p>
-                            </div>
-                        </div>
-                    </a>
+    <div class="container flex-shrink-0">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-5">
+                <div class="card text-light bg-dark">
+                    <h3 class="card-header">
+                        Über mich
+                    </h3>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Ich bin 12 Jahre alt und lebe in der Schweiz. Meine
+                            Hobbys:
+                        </p>
+                        <ul>
+                            <li>Programmieren</li>
+                            <li>Tischtennis</li>
+                            <li>Unihockey</li>
+                            <li>Fotografieren</li>
+                        </ul>
+                        <a href="/ueber_mich/" class="btn btn-secondary stretched-link">Mehr über mich</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <h2 class="title text-center">Mein letztes Projekt</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card mb-3 offset-md-3 card-projekt" style="max-width: 540px; border: none;">
-                <div class="d-flex justify-content-center">
-                    <div class="row">
-                        <div>
-                            <img src="/img_flower.png" alt="Flower" height="250px;" class="flower">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="card-body">
-                                <h5 class="card-title card-color">Projekt</h5>
-                                <p class="card-text card-color">This is a wider card with supporting text below as a
-                                    natural
-                                    lead-in to
-                                    additional content. This content is a little bit longer.</p>
-                                <p class="card-text card-color"><small class="text-muted copyright">&copy;
-                                        Copyright</small></p>
-                            </div>
-                        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-5">
+                <div class="card text-light bg-dark">
+                    <h3 class="card-header">
+                        Mein letztes Projekt
+                    </h3>
+                    <div class="card-body">
+                        This is a wider card with supporting text below
+                        as a natural lead-in to additional content. This content is a little bit longer.
+                        </p>
+                        <a href="/project/" class="btn btn-secondary stretched-link">Zum Projekt</a>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        &copy;
+                        Copyright
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <!--
     <div id="row5">
         <h2 class="title">Kontakt</h2>
@@ -131,11 +122,13 @@
         </div>
     </a>
      -->
-    <footer class="footer mt-auto py-3">
+
+    <footer class="footer mt-auto py-3 bg-dark text-light">
         <div class="container">
-            <p>Place sticky footer content here.</p>
+            <span>Place sticky footer content here.</span>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
