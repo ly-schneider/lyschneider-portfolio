@@ -1,0 +1,36 @@
+languageCode = "de"
+removePathAccents = true
+disableFastRender = true
+buildFuture = true
+paginatePath = "seite"
+paginate = 12
+pygmentsCodefences = true
+
+[params]
+title = "Levyn's Website"
+description = "Levyn's Website"
+favicon = "/img/favicon.png"
+image = "/img/favicon.png"
+copyright = "2021 by Levyn Schneider"
+
+[taxonomies]
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[menu]
+[[menu.main]]
+  name = "Konzept"
+  weight = 100
+  url = "/konzept/"
+
+[[menu.main]]
+  name = "Mentoring"
+  weight = 200
+  url = "/mentoring/"
+
+[[menu.main]]
+  name = "Events"
+  weight = 300
+  url = "/events/"
