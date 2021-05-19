@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-shadow">
+  <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="/profil_picture.png" alt="Brand Picture">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto">
+            {{ $currentNode := . }}
+            {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <!-- Item With Sub -->
+            <li class="nav-item dropdown {{if $currentNode.HasMenuCurrent `main` . }}active{{end}}">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false"
+                aria-haspopup="true">{{ .Name }}</a>
+              <div class="dropdown-menu row">
+                <div class="col-auto" data-dropdown-content>
+                  <div class="dropdown-grid-menu">
+                    {{ range .Children }}
+                    <a class="dropdown-item {{if $currentNode.IsMenuCurrent `main` . }}active{{end}}"
+                      href="{{ .URL }}">{{ .Name }} </a>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- End Item With Sub -->
+            {{ else }}
+            <li class="nav-item">
+              <a class="nav-link {{if $currentNode.IsMenuCurrent `main` . }}active{{end}}" href="{{ .URL }}">{{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+            {{ end }}
+          </ul>
+          <ul class="navbar-nav">
+              <li class="nav-item nav-language-divider">
+                  <a class="nav-link" target="_blank" href="https://www.instagram.com/ly.schneider/"><i
+                          class="fa fa-instagram"></i></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://twitter.com/Levyn49213647"><i
+                          class="fa fa-twitter"></i></a>
+              </li>
+              <li class="nav-item nav-language-divider">
+                  <a class="nav-link" href="#">DE</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">EN</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>

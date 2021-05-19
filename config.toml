@@ -21,16 +21,21 @@ unsafe= true
 
 [menu]
 [[menu.main]]
-  name = "Konzept"
+  name = "Home"
   weight = 100
-  url = "/konzept/"
+  url = "/"
 
 [[menu.main]]
-  name = "Mentoring"
+  name = "Über mich"
   weight = 200
-  url = "/mentoring/"
+  url = "/ueber/"
 
 [[menu.main]]
-  name = "Events"
+  name = "Projekte"
   weight = 300
-  url = "/events/"
+  url = "/projekte/"
+
+[[menu.main]]
+  name = "Kontakt"
+  weight = 400
+  url = "/kontakt/"
