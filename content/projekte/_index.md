@@ -1,3 +1,3 @@
 +++
-title = "Projektenenen | Levyn's Website"
+title = "Projekte | Levyn's Website"
 +++
