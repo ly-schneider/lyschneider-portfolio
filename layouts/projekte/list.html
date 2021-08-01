@@ -1,5 +1,22 @@
 {{ define "main" }}
 <div class="container flex-shrink-0">
+    {{ range .Pages }}
+    <div class="row justify-content-center">
+        <div class="card col-xxl-10 col-xl-12 col-lg-12 col-md-14 col-sm-16 mt-5 px-0 zoom">
+            <img src="{{ .RelPermalink }}{{ .Params.image }}" class="card-img-top" alt="Flower" style="object-fit: cover; height: 350px;">
+            <div class="card-body">
+                <h5 class="card-title">{{ .Title }}</h5>
+                <p class="card-text">{{ .Description }}</p>
+                <div class="card-footer text-muted small px-0">
+                    <a href="{{ .RelPermalink }}" class="btn btn-secondary">Zum Projekt</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+    
+
+
     <div class="row justify-content-center">
         <div class="col-xxl-10 col-xl-12 col-lg-12 col-md-14 col-sm-16 mt-5 px-4">
             <div class="card">
@@ -23,14 +40,14 @@
     </div>
     <div class="row justify-content-center">
         <div class="card col-xxl-10 col-xl-12 col-lg-12 col-md-14 col-sm-16 mt-5 px-0 zoom">
-            <img src="/img_flower.jpg" class="card-img-top" alt="Flower" style="object-fit: cover; height: 350px;">
+            <img src="img_purple_flower.jpg" class="card-img-top" alt="Flower" style="object-fit: cover; height: 350px;">
             <div class="card-body">
                 <h5 class="card-title">Macro Fotografie</h5>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, numquam. Rerum,
                     iste perferendis. Voluptates libero itaque vero repellat nulla quasi? Sapiente modi pariatur id,
                     saepe provident quas officia corporis non!</p>
                 <div class="card-footer text-muted small px-0">
-                    <a href="/projekte/macro-blumen-fotografie" class="btn btn-secondary">Zum Projekt</a>
+                    <a href="/macro-blumen-fotografie" class="btn btn-secondary">Zum Projekt</a>
                 </div>
             </div>
         </div>
@@ -44,7 +61,7 @@
                     consequatur qui, suscipit odit voluptatum accusantium iste repellat consequuntur repellendus,
                     incidunt illo ea sunt? Aspernatur ratione temporibus mollitia animi?</p>
                 <div class="card-footer text-muted small px-0">
-                    <a href="/projekte/herbst-fotografie" class="btn btn-secondary">Zum Projekt</a>
+                    <a href="/herbst-fotografie" class="btn btn-secondary">Zum Projekt</a>
                 </div>
             </div>
         </div>
@@ -58,7 +75,7 @@
                     consectetur quos dolore quam tenetur harum facere, quod ipsa asperiores est minus unde, consequuntur
                     veniam eaque, explicabo odit laboriosam.</p>
                 <div class="card-footer text-muted small px-0">
-                    <a href="/projekte/schule-fuer-gestaltung" class="btn btn-secondary">Zum Projekt</a>
+                    <a href="/schule-fuer-gestaltung" class="btn btn-secondary">Zum Projekt</a>
                 </div>
             </div>
         </div>

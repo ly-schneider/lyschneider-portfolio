@@ -1,3 +1,3 @@
 +++
-title = "Levyn's Website"
+title = "Levyn | Developer"
 +++
