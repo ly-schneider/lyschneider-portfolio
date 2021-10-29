@@ -1,24 +1,22 @@
 {{ define "main" }}
 
-<progress id="progress" max="100" value=""></progress>
-
 <div>
-    <div class="line" style="visibility: inherit; opacity: 0; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+    <div class="line"></div>
     <div class="line-target">
         <div class="circle"
-            style="visibility: inherit; opacity: 0; transform: matrix(1, 0, 0, 1, 0, 0); background-color: #2841ff;">
+            style="background-color: #2841ff;">
         </div>
     </div>
 </div>
 <div>
-    <div class="line2" style="visibility: inherit; opacity: 0; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+    <div class="line2"></div>
 </div>
 
 <section id="one" class="ms-10-home mt-10-home">
-    <div class="animation-title" style="visibility: hidden;">
+    <div>
         <h3 id="title">levyn<span id="blue-span">.{}</span></h3>
     </div>
-    <div class="animation-content" style="visibility: hidden;">
+    <div>
         <p class="full-name ps-2"><a class="link" title="About me" href="/about/">Levyn Schneider</a></p>
         <p class="description ps-2">
             <span id="age">NaN</span> Web developer / designer <br>and <span id="work">null</span>
@@ -27,10 +25,10 @@
 </section>
 
 <section id="two" class="ms-10-home mt-10-home">
-    <div class="pog" style="visibility: hidden;">
+    <div>
         <h3 id="title">hobbies<span id="blue-span">.{}</span></h3>
     </div>
-    <div class="test">
+    <div>
         <ul class="hobbies ps-3">
             <li>Programming</li>
             <li>Tabletennis</li>
@@ -39,23 +37,5 @@
         </ul>
     </div>
 </section>
-
-<div id="invisible-one">invisible</div>
-
-<section id="three" class="ms-10-home mt-30-home">
-    <a href="/about/" id="one-link">
-        <div id="animation-title-two">
-            <h3 id="title-two">levyn<span id="blue-span">.{}</span></h3>
-        </div>
-        <div id="animation-content-two">
-            <p class="full-name ps-2">Levyn Schneider</p>
-            <p class="description ps-2">
-                <span id="age">NaN</span> Web developer and Designer, <br><span id="work">null</span>
-            </p>
-        </div>
-    </a>
-</section>
-
-<div id="invisible-two">invisible</div>
 
 {{ end }}

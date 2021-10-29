@@ -30,18 +30,10 @@ a {
   border-bottom: 1px solid #2437c6;
 }
 
-progress {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  transform: translate(-48%, -200%);
-}
-
 /* Navbar */
 
 .navbar-brand {
-  font-size: 28px;
+  font-size: 28px!important;
   color: #2841ff;
   transition: 0.3s;
   top: 50%;
@@ -150,16 +142,4 @@ progress {
 .hobbies {
   color: #c2c2c2;
   line-height: 30px;
-}
-
-#invisible-one {
-  color: white;
-  position: absolute;
-  top: 95vh;
-}
-
-#invisible-two {
-  color: white;
-  position: absolute;
-  top: 347vh;
 }
