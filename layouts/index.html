@@ -11,34 +11,64 @@
     <div class="line2"></div>
 </div>
 
-<section id="one" class="ms-10-home mt-10-home">
+<section class="sections ml-custom mt-custom">
     <div>
-        <h3 id="title">levyn<span id="blue-span">.{}</span></h3>
+        <h3 class="title">levyn<span class="blue-span">.{}</span></h3>
     </div>
-    <div id="sub-title">
-        <p class="full-name ps-2"><a class="link" title="About me" href="/about/">Levyn Schneider</a></p>
+    <div class="sub-title">
+        <p class="full-name ps-2">Levyn Schneider</p>
         <p class="description ps-2">
             <span id="age">NaN</span> Web developer / designer <br>and <span id="work">null</span>
         </p>
-        <a id="showMore" href="/about/">Show more</a>
+        <a class="showMore-blue" href="/about/">Show more</a>
     </div>
-    <a href="/about/">
-        <img src="img/levyn.jpg" alt="Levyn Schneider" id="portrait" class="p-custom-img">
-    </a>
 </section>
 
-<section id="two" class="ms-10-home mt-10-home">
+<section class="sections ml-custom mt-custom-1 pb-custom">
     <div>
-        <h3 id="title">hobbies<span id="blue-span">.{}</span></h3>
+        <h3 class="title">hobbies<span class="purple-span">.{}</span></h3>
     </div>
-    <div>
-        <ul class="hobbies ps-3">
+    <div class="sub-title">
+        <ul class="hobbies ps-4">
             <li>Programming</li>
             <li>Tabletennis</li>
             <li>Floorball</li>
             <li>Photography / Videography</li>
         </ul>
+        <a class="showMore-purple" href="/about/">Show more</a>
     </div>
+</section>
+
+<section class="sections ml-custom mt-custom-2 pb-custom">
+    <div>
+        <h3 class="title">skills<span class="green-span">.{}</span></h3>
+    </div>
+    <div class="sub-title mt-none">
+        <ul class="hobbies ps-4">
+            <li>HTML/CSS/JS/PHP</li>
+            <li>VueJS/GSAP/BOOTSTRAP</li>
+            <li>Python</li>
+            <li>Java</li>
+        </ul>
+        <a class="showMore-green" href="/skills/">Show more</a>
+    </div>
+</section>
+
+<section class="sections ml-custom mt-custom-2 pb-custom-1">
+    <div>
+        <h3 class="title">contact<span class="red-span">.{me}</span></h3>
+    </div>
+    <form>
+        <div class="mb-3 ps-2">
+            <label for="exampleInputEmail1" class="form-label">Email address:</label>
+            <input type="email" class="form-control form-email" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-4 ps-2">
+            <label for="exampleInputMessage1" class="form-label">Message:</label>
+            <textarea type="text" class="form-control form-message" id="exampleInputMessage1"></textarea>
+        </div>
+        <button type="submit" class="btn btn-red ms-2">Submit</button>
+      </form>
 </section>
 
 {{ end }}

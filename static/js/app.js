@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function() {
     var dob = new Date("08/16/2008");
 
     var month_diff = Date.now() - dob.getTime();
@@ -17,3 +17,27 @@ window.onload = function () {
         document.getElementById("work").innerHTML = "still at school.";
     }
 }
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray('.one').forEach((section, i) => {
+  
+  if(section.getAttribute('data-color') !== null) {
+    
+    var colorAttr = section.getAttribute('data-color')
+    
+    gsap.to(".line", {
+      backgroundColor: colorAttr === "dark" ? gsap.getProperty("html", "--blue") : gsap.getProperty("html", "--purple"),
+      immediateRender: false,
+      scrollTrigger: {
+        trigger: section,
+        scrub: true,
+        start:'top bottom',
+        end: '+=100%',
+        markers: true
+      }
+    });
+
+  }
+  
+});
