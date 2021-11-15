@@ -7,6 +7,7 @@ html {
     text-decoration: none!important;
     box-sizing: border-box;
     scroll-behavior: smooth!important;
+    overflow: hidden;
 }
 
 :root {
@@ -18,6 +19,22 @@ html {
     --color-hover: #8c8c8c;
     --blue: #2841ff;
     --purple: #9418ed;
+    --green: #056005;
+    --red: #9b1919;
+}
+
+/* Scroll Snapping */
+
+.parent {
+    overflow: scroll;
+    height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
 }
 
 /* Links */
@@ -127,15 +144,15 @@ a {
 }
 
 .mt-custom {
-    margin-top: 15rem!important;
+    margin-top: 9rem!important;
 }
 
 .mt-custom-1 {
-    margin-top: 40rem!important;
+    margin-top: 0rem!important;
 }
 
 .mt-custom-2 {
-    margin-top: 14rem!important;
+    margin-top: 0rem!important
 }
 
 .pb-custom {
@@ -143,11 +160,19 @@ a {
 }
 
 .pb-custom-1 {
-    padding-bottom: 19rem!important;
+    margin-bottom: -40rem!important;
 }
 
 .mt-none {
     margin-top: -20px!important;
+}
+
+.custom-height {
+    height: 81vh!important;
+}
+
+.pt-custom {
+    padding-top: 9rem!important;
 }
 
 /* Sections */
