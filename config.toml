@@ -11,7 +11,7 @@ title = "lyschneider"
 description = "Levyn's Portfolio"
 favicon = "/img/favicon.png"
 image = "/img/favicon.png"
-copyright = "2021 by Levyn Schneider"
+copyright = "2022 by Levyn Schneider"
 
 [taxonomies]
 tag = "tags"
