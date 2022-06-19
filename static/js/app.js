@@ -1,21 +1,20 @@
-window.onload = function () {
-  var dob = new Date("08/16/2008");
+gsap.registerPlugin(ScrollTrigger);
 
-  var month_diff = Date.now() - dob.getTime();
+gsap.to(".grid", {
+    duration: 2.5,
+    opacity: 1
+})
 
-  var age_dt = new Date(month_diff);
+gsap.to(".text", { duration: 3, text: "Fotograf und Informatiker", ease: "none" });
+let cursor = gsap.to('.cursor', { opacity: 0, ease: "power2.inOut", repeat: -1 })
 
-  var year = age_dt.getUTCFullYear();
-
-  var age = Math.abs(year - 1970);
-
-  document.getElementById("age").innerHTML = age + " years old,";
-
-  if (age > 15) {
-    document.getElementById("work").innerHTML = "currently working.";
-  } else {
-    document.getElementById("work").innerHTML = "still at school.";
-  }
-}
-
-
+gsap.to(".btn-top-container", {
+    scrollTrigger: {
+        trigger: ".trigger-arrow",
+        start: "top top",
+        scrub: true
+    },
+    duration: 0.1,
+    autoAlpha: 1,
+    opacity: 1
+})

@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Source+Code+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    /* font-family: "Roboto Mono", monospace; */
+    text-decoration: none !important;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    scroll-behavior: smooth;
+}
+
+.opacity-animation {
+    opacity: 1;
+}
+
+/* Links */
+
+a {
+    text-decoration: none !important;
+    color: rgb(165, 165, 165);
+    transition: 0.3s;
+    height: auto;
+}
+
+a:hover {
+    color: rgb(120, 120, 120);
+}
+
+.disabled:hover {
+    color: rgb(165, 165, 165) !important;
+    cursor: text;
+}
+
+// Button Top of page
+.btn-top {
+    background-color: rgb(165, 165, 165);
+    border-radius: 50%;
+
+    i {
+        color: rgb(255, 255, 255);
+    }
+
+    &:hover {
+        background-color: rgb(120, 120, 120);
+    }
+}
+
+.btn-top-container {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 10;
+    top: 95%;
+    bottom: 0%;
+    left: 97%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
+
+/* Navbar */
+
+.navbar {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    padding-bottom: 0 !important;
+    transition: border 0.3s, color 0.3s !important;
+}
+
+.navbar-brand {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding-bottom: 0 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: border 0.3s, color 0.3s !important;
+}
+
+.navbar-brand:hover {
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+// Text
+
+.title {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+.animation h1 {
+    font-weight: 600 !important;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.textdiv h2,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.textdiv h5 {
+    font-weight: 400;
+}
+
+.textdiv p,
+ul,
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.muted {
+    font-size: 15px !important;
+    color: rgb(160, 160, 160);
+}
+
+form label {
+    color: rgb(150, 150, 150);
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+.bold a {
+    color: rgb(195, 195, 195) !important;
+
+    &:hover {
+        color: rgb(165, 165, 165) !important;
+    }
+}
+
+.avatar.avatar-xlg {
+    width: 6.5rem;
+    height: auto;
+}
+
+.avatar {
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+// Divider
+
+.bg-custom {
+    background-color: rgb(255, 255, 255);
+}
+
+.divider {
+    fill: rgb(255, 255, 255) !important;
+}
+
+.textdiv {
+    color: rgb(72, 72, 72);
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+// Cards
+
+.card {
+    font-family: 'Nunito', sans-serif;
+}
+
+.card:hover {
+    border: none!important;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 300;
+    color: #bbb;
+}
+
+.card-img {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0px 0px
+}
+
+.card-img-overlay {
+    border-radius: 0px 0px calc(0.25rem - 1px) calc(0.25rem - 1px);
+}
+
+.card-hover .reveal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card-hover:hover .reveal {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.card-hover a {
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .card-hover .reveal {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        background-color: rgb(35, 35, 35);
+    }
+
+    .a-hover:hover .reveal {
+        background-color: rgb(70, 70, 70)!important;
+    }
+
+    .contact-link {
+        color: rgb(195, 195, 195) !important;
+    }
+}
+
+// Form Button
+
+.btn-card {
+    border: 1px solid rgb(165, 165, 165);
+}
+
+.btn-card:hover {
+    background-color: rgba(0, 0, 0, 0.203);
+    border: 1px solid rgb(150, 150, 150);
+}
+
+.btn-card a {
+    color: rgb(255, 255, 255);
+}
+
+// Footer
+
+footer {
+    border-top: 1px solid rgba(45, 45, 45, 0.338);
+    background-color: rgb(255, 255, 255);
+
+    h5,
+    div {
+        color: rgb(0, 0, 0);
+    }
+
+    a {
+        color: rgb(140, 140, 140) !important;
+
+        &:hover {
+            color: rgb(70, 70, 70) !important;
+        }
+    }
+
+    .ul-disc {
+        list-style-type: disc;
+    }
+}
+
+// @media screen and (max-width: 611px) {
+//     .entwickelt-mit {
+//         padding-left: 0px!important;
+//     }
+// }
+
+// Grid
+
+.grid {
+    opacity: 0;
+}
+
+.grid-sizer,
+.grid-item {
+    width: 33.3%;
+    // border-left: 5px solid black;
+    // border-bottom: 5px solid black;
+    // &:nth-of-type(1) {
+    //     border-top: 5px solid black;
+    // }
+    // &:nth-of-type(2) {
+    //     border-top: 5px solid black;
+    //     border-right: 5px solid black;
+    // }
+    // &:nth-of-type(3) {
+    //     border-right: 5px solid black;
+    // }
+    // &:nth-of-type(5) {
+    //     border-left: none;
+    // }
+    // &:nth-of-type(6) {
+    //     border-right: 5px solid black;
+    // }
+    // &:nth-of-type(8) {
+    //     border-right: 5px solid black;
+    // }
+    // &:nth-of-type(9) {
+    //     border-right: 5px solid black;
+    // }
+}
+
+.grid-item-2 {
+    width: 66.6%;
+}

@@ -1,3 +1,3 @@
 +++
-title = "levyn.js"
+title = "Levyn · Portfolio"
 +++

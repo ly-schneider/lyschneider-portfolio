@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<div class="btn-back mt-3 ms-3">
+    <a href="javascript:history.back();"><button class="btn btn-top"><i class="fa-solid fa-arrow-left"></i></button></a>
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="textdiv p-4">
+            <div class="row pt-5 justify-content-center" id="informatik">
+                <h2 class="text-center pt-3">Motorrad Shooting</h2>
+                <div class="col-xl-10 col-lg-10 col-md-10">
+                    <p class="mt-3 text-center">
+                        Ein paar von meinen lieblings Bildern an einem Motorrad Shooting.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-custom mb-5 pb-5">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <img src="/img/projects/image-bike-1.jpg" alt="Image of Bikes 2" class="grid-item grid-item-2">
+            <img src="/img/projects/image-bike-2.jpg" alt="Image of Bikes 3" class="grid-item grid-item-2">
+            <img src="/img/projects/image-bike-3.jpg" alt="Image of Bikes 4" class="grid-item">
+            <img src="/img/projects/image-bike.jpg" alt="Image of Bikes 1" class="grid-item">
+            <img src="/img/projects/image-bike-4.jpg" alt="Image of Bikes 5" class="grid-item">
+            <img src="/img/projects/image-bike-5.jpg" alt="Image of Bikes 6" class="grid-item">
+            <img src="/img/projects/image-bike-6.jpg" alt="Image of Bikes 7" class="grid-item">
+        </div>
+    </div>
+</div>
+
+{{ end }}
+
+{{ define "body_include" }}
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<script>
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+    })
+</script>
+
+{{ end }}

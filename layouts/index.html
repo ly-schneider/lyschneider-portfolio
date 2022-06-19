@@ -1,77 +1,285 @@
 {{ define "main" }}
 
-<div>
-    <div class="line"></div>
-    <div class="line-target">
-        <div class="circle" style="background-color: #2841ff;">
+<style>
+    html,
+    body {
+        background-image: url("/img/projects/image-cape-may-9-high.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+<!-- Button for top of page -->
+<div class="btn-top-container">
+    <a href="#top"><button class="btn btn-top"><i class="fa-solid fa-arrow-up"></i></button></a>
+</div>
+
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="intro mt-5 pt-5">
+            <h1 class="title text-center mt-5">👋 Hi! Ich bin Levyn Schneider,</h1>
+        </div>
+        <div class="animation">
+            <h1 class="text-center">
+                <span class="hi"></span>
+                <span class="anim-typewriter text"></span>
+                <span class="cursor">_</span>
+            </h1>
         </div>
     </div>
 </div>
-<div>
-    <div class="line2"></div>
+
+<div class="col mt-3" id="uebermich">
+    <div class="divider row pt-5">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1"
+                d="M0,128L80,144C160,160,320,192,480,202.7C640,213,800,203,960,186.7C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+    </div>
 </div>
-
-<div class="parent">
-    <section class="sections ml-custom mt-custom pt-custom one">
-        <div>
-            <h3 class="title">levyn<span class="blue-span">.{}</span></h3>
-        </div>
-        <div class="sub-title">
-            <p class="full-name ps-2">Levyn Schneider</p>
-            <p class="description ps-2">
-                <span id="age">NaN</span> Web developer / designer <br>and <span id="work">null</span>
-            </p>
-            <a class="showMore-blue" href="/about/">Show more</a>
-        </div>
-    </section>
-
-    <section class="sections ml-custom mt-custom-1 pb-custom pt-custom two">
-        <div>
-            <h3 class="title">hobbies<span class="purple-span">.{}</span></h3>
-        </div>
-        <div class="sub-title">
-            <ul class="hobbies ps-4">
-                <li>Programming</li>
-                <li>Tabletennis</li>
-                <li>Floorball</li>
-                <li>Photography / Videography</li>
-            </ul>
-            <a class="showMore-purple" href="/about/">Show more</a>
-        </div>
-    </section>
-
-    <section class="sections ml-custom mt-custom-2 pb-custom pt-custom three">
-        <div>
-            <h3 class="title">skills<span class="green-span">.{}</span></h3>
-        </div>
-        <div class="sub-title mt-none">
-            <ul class="hobbies ps-4">
-                <li>HTML/CSS/JS/PHP</li>
-                <li>VueJS/GSAP/BOOTSTRAP</li>
-                <li>Python</li>
-                <li>Java</li>
-            </ul>
-            <a class="showMore-green" href="/skills/">Show more</a>
-        </div>
-    </section>
-
-    <section class="custom-height ml-custom mt-custom-2 pb-custom-1 four">
-        <div>
-            <h3 class="title">contact<span class="red-span">.{me}</span></h3>
-        </div>
-        <form>
-            <div class="mb-3 ps-2">
-                <label for="exampleInputEmail1" class="form-label">Email address:</label>
-                <input type="email" class="form-control form-email" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
+<div class="container-fluid bg-custom" style="overflow-y: hidden;">
+    <div class="container">
+        <div class="textdiv p-4">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 d-flex pe-5 me-5 justify-content-center">
+                    <div class="mt-3">
+                        <div class="d-sm-flex">
+                            <!-- <div class="flex-shrink-0 mb-3 mb-sm-0">
+                            </div> -->
+                            <div class="flex-grow-1 ms-sm-4 my-auto d-inline">
+                                <h2 class="mb-2"><img class="avatar avatar-xlg avatar-circle shadow-lg me-3" src="/img/levyn-portrait.jpg"
+                                    alt="Ben Zaugg">Über mich</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-10">
+                    <!-- <h2 class="text-center pt-3">Über mich</h2> -->
+                    <p class="pt-5">Mein Name ist Levyn und ich lebe aktuell in der Schweiz. Ich Fotografiere
+                        seit 2 Jahren allerdings erst seit 1 Jahr professionell. Mit Videografie auch Filmemachen genannt habe ich
+                        erst seid neuem angefangen und daher auch noch keine öffentlichen Projekte zum zeigen. <a href="#fotografie">Hier</a> können Sie mehr über meine Foto und
+                        Videografie lesen.</p>
+                    <p class="pt-2">Webentwicklung mache ich auch bereits seit 1 - 2 Jahren. Ich hatte bereits
+                        die
+                        Möglichkeit bei offiziellen Projekten mit zu helfen. Wenn Sie mehr über dieses Thema lesen
+                        wollen
+                        schauen Sie <a href="#webdevelopment">Hier</a>. </p>
+                </div>
             </div>
-            <div class="mb-4 ps-2">
-                <label for="exampleInputMessage1" class="form-label">Message:</label>
-                <textarea type="text" class="form-control form-message" id="exampleInputMessage1"></textarea>
+        </div>
+    </div>
+    <div class="container">
+        <div class="textdiv p-4 mt-5">
+            <div class="row mt-5 pt-5 justify-content-center" id="informatik">
+                <h2 class="text-center pt-3">Informatik</h2>
+                <div class="col-xl-10 col-lg-10 col-md-10">
+                    <p class="pt-5">Die Informatik war immer etwas was mich sehr interessiert hat. Ich liebte den
+                        Prozess zu sehen wie man z.B. von einer leeren Website zu einer lebvollen und informativen
+                        Website
+                        kommt.</p>
+                    <p class="pt-2">Ich habe früh angefangen HTML und CSS zu lernen weil es eine recht einfach Sprache
+                        war zu lernen und trotzdem lernte man viel über die Informatik. Später lernte ich dann zusätlich
+                        noch andere Sprachen wie JavaScript, PHP, Python und Java.</p>
+                    <p class="pt-2">Ich hatte auch das Privileg bei einigen Webentwicklung's Projekten mit arbeiten
+                        zu können oder sogar leiten zu können. Unten sehen Sie Projekte an denen ich bereits gearbeitet
+                        habe.</p>
+                    <p class="pt-2">Fun fact: Diese Website wo Sie aktuell daruf sind wurde alleine von
+                        anfangan an ohne Template entwickelt.</p>
+                    <h5 class="pt-2">Alleine:</h5>
+                    <ul class="pt-1">
+                        <li>Offizielle <a href="https://bildungzuhause-bern.ch"
+                                target="_blank">bildungzuhause-bern.ch</a> Website</li>
+                        <li><a class="disabled">wichteln.bildungzuhause-bern.ch</a> (noch nicht veröffentlich da es in
+                            Entwicklung ist)</li>
+                        <li><a href="https://g52pj.csb.app/" target="_blank">Preisberechner</a> (altes Projekt
+                            wo nicht mehr geupdated wird)</li>
+                    </ul>
+                    <h5>Mitarbeit:</h5>
+                    <ul>
+                        <li><a href="https://colearningbern.ch" target="_blank">colearningbern.ch</a> (Verantwortung von
+                            auferhalt der Website)</li>
+                    </ul>
+                </div>
             </div>
-            <button type="submit" class="btn btn-red ms-2">Submit</button>
-        </form>
-    </section>
+        </div>
+    </div>
+    <div class="container">
+        <div class="textdiv p-4 mt-5" id="fotografie">
+            <div class="row mt-5 pt-5 justify-content-center">
+                <h2 class="text-center pt-3">Fotografie</h2>
+                <div class="col-xl-10 col-lg-10 col-md-10">
+                    <p class="pt-5">Im Herbst 2016 während einer Reise in Afrika durft ich zum ersten mal eine
+                        Kamera brauchen und ich liebte es Bilder zu machen. Zu meinem 12. Geburtstag bekam ich meine
+                        erste
+                        eigene Kamera (Canon 2000D). Ich habe 1 - 2 Jahre mit dieser Kamera Fotografiert aber sie wurde
+                        schnell nicht mehr wirklich brauchbar für mein Niveau. Zu meinem 13. Geburtstag bekam ich dann
+                        meine
+                        aktuelle Sony Alpha 7ii. Bis jetzt liebe ich diese Kamera und ich kann sie jedem Empfehlen.</p>
+                    <p class="pt-2 mb-1">Hier unten siehst du einige von meinen lieblings Shootings.</p>
+                    <p class="muted">* Bedeuted das eine Unterseite verfügbar ist.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cape-may"></div>
+    <div class="container-fluid bg-custom">
+        <div class="row row-cols-1 row-cols-md-2 g-5 p-4 px-custom mt-5">
+            <div class="col trigger-arrow">
+                <div class="card card-hover text-white a-hover">
+                    <a href="/cape-may/">
+                        <img src="/img/projects/image-cape-may-9.jpg" class="card-img" alt="Image of Cape May, USA">
+                        <div class="p-3 card-img-overlay reveal">
+                            <h6 class="card-title text-center"><span class="bold">Cape May</span><span class="light"> |
+                                    USA *</span></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-hover text-white a-hover">
+                    <a href="/cape-may/">
+                        <img src="/img/projects/image-cape-may-1.jpg " class="card-img" alt="Image of Cape May, USA">
+                        <div class="p-3 card-img-overlay reveal">
+                            <h6 class="card-title text-center"><span class="bold">Cape May</span><span class="light"> |
+                                    USA *</span></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-hover text-white">
+                    <img src="/img/projects/image-anja.jpg" class="card-img" alt="Portrait Image">
+                    <div class="p-3 card-img-overlay reveal">
+                        <h6 class="card-title text-center"><span class="bold">Anja</span><span class="light"> |
+                                Portrait</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-hover text-white">
+                    <img src="/img/projects/image-autmn.jpg" class="card-img" alt="...">
+                    <div class="p-3 card-img-overlay reveal">
+                        <h6 class="card-title text-center"><span class="bold">Herbst Laub</span><span class="light"> |
+                                Natur</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-hover text-white">
+                    <img src="/img/projects/image-macro-1.jpg" class="card-img" alt="...">
+                    <div class="p-3 card-img-overlay reveal">
+                        <h6 class="card-title text-center"><span class="bold">Blumen</span><span class="light"> |
+                                Macro</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-hover text-white">
+                    <img src="/img/projects/image-macro.jpg" class="card-img" alt="...">
+                    <div class="p-3 card-img-overlay reveal">
+                        <h6 class="card-title text-center"><span class="bold">Blumen v2</span><span class="light"> |
+                                Macro</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-hover text-white">
+                    <img src="/img/projects/image-new-york.jpg" class="card-img" alt="...">
+                    <div class="p-3 card-img-overlay reveal">
+                        <h6 class="card-title text-center"><span class="bold">New York</span><span class="light"> |
+                                Street</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-hover text-white a-hover">
+                    <a href="/motorrad/">
+                        <img src="/img/projects/image-bike.jpg" class="card-img" alt="...">
+                        <div class="p-3 card-img-overlay reveal">
+                            <h6 class="card-title text-center"><span class="bold">Motorrad</span><span class="light"> |
+                                    Yamaha
+                                    YZF-R 125 *</span></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-hover text-white">
+                    <img src="/img/projects/image-street.jpg" class="card-img" alt="...">
+                    <div class="p-3 card-img-overlay reveal">
+                        <h6 class="card-title text-center"><span class="bold">Langzeit Belichtung</span><span
+                                class="light">
+                                | Autobahn</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-hover text-white a-hover">
+                    <a href="/cape-may/">
+                        <img src="/img/projects/image-cape-may-6.jpg" class="card-img" alt="...">
+                        <div class="p-3 card-img-overlay reveal">
+                            <h6 class="card-title text-center"><span class="bold">Cape May</span><span class="light"> |
+                                    USA *</span></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-hover text-white">
+                    <img src="/img/image-plus.jpg" class="card-img" alt="...">
+                    <div class="p-3 card-img-overlay reveal">
+                        <h6 class="card-title text-center">
+                            <span class="bold">
+                                Du kannst mir helfen diese Galerie zu erweitern. Wenn du Lust hast kannst du mich mit
+                                hilfen vom
+                                <a href="#kontakt" class="contact-link">Kontaktformular</a> kontaktieren.
+                            </span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="textdiv p-4 mt-5" id="kontakt">
+            <div class="row mt-5 pt-5 justify-content-center">
+                <h2 class="text-center pt-3">Kontakt</h2>
+                <div class="col-xl-10 col-lg-10 col-md-10 mt-4">
+                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netfliy>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Vorname Name</label>
+                                    <input name="contact-name" type="text" class="form-control mt-2" required>
+                                    <div class="invalid-feedback">
+                                        Bitte geben Sie Ihren Vor- und Nachnamen ein.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>E-Mail Addresse</label>
+                                    <input name="contact-email" type="email" class="form-control mt-2" required>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <div class="form-group">
+                                    <label>Nachricht</label>
+                                    <textarea class="form-control mt-2" name="contact-message" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12" data-netlify-recaptcha="true"></div>
+                            <div class="col mt-2 mt-4">
+                                <button type="submit" class="btn btn-card btn-loading">Senden</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
 {{ end }}

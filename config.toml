@@ -7,8 +7,8 @@ paginate = 12
 pygmentsCodefences = true
 
 [params]
-title = "Levyn's Website"
-description = "Levyn's Website"
+title = "lyschneider"
+description = "Levyn's Portfolio"
 favicon = "/img/favicon.png"
 image = "/img/favicon.png"
 copyright = "2021 by Levyn Schneider"
@@ -18,24 +18,3 @@ tag = "tags"
 
 [markup.goldmark.renderer]
 unsafe= true
-
-[menu]
-[[menu.main]]
-  name = "Home"
-  weight = 100
-  url = "/"
-
-[[menu.main]]
-  name = "Über mich"
-  weight = 200
-  url = "/ueber/"
-
-[[menu.main]]
-  name = "Projekte"
-  weight = 300
-  url = "/projekte/"
-
-[[menu.main]]
-  name = "Kontakt"
-  weight = 400
-  url = "/kontakt/"
