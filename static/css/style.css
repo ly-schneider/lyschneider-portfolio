@@ -137,6 +137,12 @@ li {
   color: #a0a0a0;
 }
 
+#success {
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px !important;
+}
+
 form label {
   color: #969696;
   font-weight: 600;

@@ -248,7 +248,7 @@
             <div class="row mt-5 pt-5 justify-content-center">
                 <h2 class="text-center pt-3">Kontakt</h2>
                 <div class="col-xl-10 col-lg-10 col-md-10 mt-4">
-                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netfliy>
+                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="" netfliy onsubmit="submited()">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -271,12 +271,21 @@
                                     <textarea class="form-control mt-2" name="contact-message" rows="10"></textarea>
                                 </div>
                             </div>
-                            <div class="col-12" data-netlify-recaptcha="true"></div>
+                            <div class="col-12 mt-4" data-netlify-recaptcha="true"></div>
                             <div class="col mt-2 mt-4">
                                 <button type="submit" class="btn btn-card btn-loading">Senden</button>
                             </div>
+                            <div class="col-12 mt-2 mt-3">
+                                <label id="success"></label>
+                            </div>
                         </div>
                     </form>
+                    <script>
+                        function submited() {
+                            document.getElementById("success").innerText = "Deine Nachricht wurde erfolgreich verschickt!"
+                            document.location.href = "#kontakt"
+                        }
+                    </script>
                 </div>
             </div>
         </div>
