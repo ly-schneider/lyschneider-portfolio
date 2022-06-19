@@ -5,7 +5,7 @@ gsap.to(".grid", {
     opacity: 1
 })
 
-gsap.to(".text", { duration: 3, text: "Fotograf und Informatiker", ease: "none" });
+gsap.to(".text", { duration: 3, text: "Fotograf und Informatiker i.A", ease: "none" });
 let cursor = gsap.to('.cursor', { opacity: 0, ease: "power2.inOut", repeat: -1 })
 
 gsap.to(".btn-top-container", {
