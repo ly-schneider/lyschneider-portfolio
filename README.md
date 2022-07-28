@@ -1,6 +1,11 @@
-This is my personal portfolio for my developer and photographer "career". Hope you like it :)
+## Portfolio
 
-https://lyschneider.netlify.app/
+This is the source code for https://lyschneider.netlify.app/
 
-If you have any suggestions for the webiste you can happily make a pull request :)
-Tyy
+## General
+
+The website uses [Hugo](https://gohugo.io/) frameworking and is hosted on [Netlify](https://netlify.app/)
+
+## Copyright
+
+The entire website, including the images are copyrighted but, you can happily take inspiration from it :)
