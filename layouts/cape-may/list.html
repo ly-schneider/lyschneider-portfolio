@@ -1,38 +1,67 @@
+{{ define "style" }}
+<style>
+    html,
+    body {
+        background-color: #131313;
+    }
+</style>
+{{ end }}
 {{ define "main" }}
 
-<div class="btn-back mt-3 ms-3">
-    <a href="javascript:history.back();"><button class="btn btn-top"><i class="fa-solid fa-arrow-left"></i></button></a>
-    <!-- <a href="/"><button class="btn btn-top"><i class="fa-solid fa-arrow-left"></i></button></a> -->
+<div class="container me-0 pe-0 d-flex align-items-center min-vh-100">
+    <div class="position-absolute collection-back">
+        <a href="javascript:history.back();"><button class="btn btn-back"><i
+                    class="fa-solid fa-arrow-left"></i></button></a>
+    </div>
+    <div class="row d-flex align-items-center">
+        <div class="position-absolute col div-collection">
+            <h1>Cape May</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur numquam voluptates omnis rerum
+                voluptate at consectetur quod deserunt</p>
+        </div>
+        <div class="col col-collection">
+            <img src="/img/fotografie/cape-may/cape-may-9-high.jpg" class="d-block w-100 image-collection" alt="Cape May">
+        </div>
+    </div>
+    <div class="position-absolute collection-scroll">
+        <p>SCROLL<i class="fa-solid fa-arrow-down mt-2"></i></p>
+    </div>
 </div>
-
-<div class="container-fluid">
-    <div class="container">
-        <div class="textdiv p-4">
-            <div class="row pt-5 justify-content-center" id="informatik">
-                <h2 class="text-center pt-3">Cape May | USA</h2>
-                <div class="col-xl-10 col-lg-10 col-md-10">
-                    <p class="mt-3 text-center">
-                        Hier sind ein paar meiner Favoriten von Cape May, USA.
-                    </p>
+<div class="container-fluid mx-0 px-0 mt-5 mb-5 pb-5">
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <img src="/img/fotografie/cape-may/cape-may-9.jpg" alt="Image of Cape May 1" class="grid-item grid-item-2">
+        <img src="/img/fotografie/cape-may/cape-may-10.jpg" alt="Image of Cape May 10" class="grid-item grid-item-2">
+        <img src="/img/fotografie/cape-may/cape-may-2.jpg" alt="Image of Cape May 2" class="grid-item grid-item-2">
+        <img src="/img/fotografie/cape-may/cape-may-3.jpg" alt="Image of Cape May 3" class="grid-item">
+        <img src="/img/fotografie/cape-may/cape-may-4.jpg" alt="Image of Cape May 4" class="grid-item">
+        <img src="/img/fotografie/cape-may/cape-may-6.jpg" alt="Image of Cape May 6" class="grid-item">
+        <img src="/img/fotografie/cape-may/cape-may-5.jpg" alt="Image of Cape May 5" class="grid-item grid-item-2">
+        <img src="/img/fotografie/cape-may/cape-may-7.jpg" alt="Image of Cape May 7" class="grid-item">
+        <img src="/img/fotografie/cape-may/cape-may-8.jpg" alt="Image of Cape May 8" class="grid-item">
+    </div>
+</div>
+<footer class="pb-0 dark-bg-2 pt-5">
+    <div class="py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <a class="navbar-brand" href="/" id="lyschneider">lyschneider</a>
+                </div>
+                <div class="col-6 text-center mt-3">
+                    <p class="text-center text-muted copyright">© 2022 by Levyn Schneider</p>
+                </div>
+                <div class="col-3 text-end">
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="mailto:lyschneider@icloud.com" role="button"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.instagram.com/ly.schneider/" target="_blank" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://github.com/ly-schneider" target="_blank" role="button"><i class="fab fa-github"></i
+                        ></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-custom mb-5 pb-5">
-        <div class="grid">
-            <div class="grid-sizer"></div>
-            <img src="/img/projects/image-cape-may-9.jpg" alt="Image of Cape May 1" class="grid-item grid-item-2">
-            <img src="/img/projects/image-cape-may-2.jpg" alt="Image of Cape May 2" class="grid-item grid-item-2">
-            <img src="/img/projects/image-cape-may-5.jpg" alt="Image of Cape May 5" class="grid-item grid-item-2">
-            <img src="/img/projects/image-cape-may-10.jpg" alt="Image of Cape May 10" class="grid-item grid-item-2">
-            <img src="/img/projects/image-cape-may-3.jpg" alt="Image of Cape May 3" class="grid-item">
-            <img src="/img/projects/image-cape-may-4.jpg" alt="Image of Cape May 4" class="grid-item">
-            <img src="/img/projects/image-cape-may-6.jpg" alt="Image of Cape May 6" class="grid-item">
-            <img src="/img/projects/image-cape-may-7.jpg" alt="Image of Cape May 7" class="grid-item">
-            <img src="/img/projects/image-cape-may-8.jpg" alt="Image of Cape May 8" class="grid-item">
-        </div>
-    </div>
-</div>
+</footer>
 
 {{ end }}
 
