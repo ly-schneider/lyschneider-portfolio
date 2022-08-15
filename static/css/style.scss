@@ -2,22 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 // Colors
-$background-1: #0b0b0b;
-$background-2: #dadada;
+$background-dark: #0b0b0b;
+$background-light: #dadada;
+$background-light-1: #edecf1;
 $font-color: #ffffff;
+$font-color-dark: #0b0b0b;
 $primary-color: #f5e0bf;
 // Title
 $title-font: 'Ubuntu', sans-serif;
-$title-size: 28px;
+$title-size: 40px;
+$title-size-sm: 28px;
 $title-weight: 600;
 $title-weight-sm: 500;
 // Text
 $text-font: 'Montserrat', sans-serif;
-$text-size-lg: 18px;
-$text-size-m: 16px;
-$text-size-sm: 14px;
-$text-weight: 500;
-$text-weight-sm: 300;
+$text-size: 16px;
+$text-weight: 400;
 
 // General CSS
 * {
@@ -41,61 +41,67 @@ h1 {
     color: $font-color;
 }
 
+h3 {
+    font-family: $title-font;
+    font-size: $title-size-sm;
+    font-weight: $title-weight;
+    color: $font-color;
+}
+
 p {
     font-family: $text-font;
-    font-size: $text-size-sm;
-    font-weight: $text-weight-sm;
+    font-size: $text-size;
+    font-weight: $text-weight;
     color: $font-color;
 }
 
 a {
-    color: #cccccc;
+    color: $primary-color;
+    font-weight: 500;
     text-decoration: none !important;
-
     &:hover {
-        color: #dddddd;
+        color: #f3ede2;
     }
 }
 
+// Backgrounds
 .background-dark {
-    background-color: $background-1;
-
+    background-color: $background-dark;
     h1,
     p {
-        color: #ffffff;
+        color: $font-color;
     }
 }
 
 .background-light {
-    background-color: $background-2;
-
+    background-color: $background-light;
     h1,
     p {
-        color: #0b0b0b;
+        color: $font-color-dark;
     }
 }
 
 .background-light-2 {
-    background-color: rgb(237, 236, 241);
-
+    background-color: $background-light-1;
     h1,
     p {
-        color: #0b0b0b;
+        color: $font-color-dark;
     }
 }
 
-.text-dark {
-    color: #0b0b0b;
+.text-light {
+    color: $font-color;
 }
 
-.text-light {
-    color: #ffffff;
+.text-dark {
+    color: $font-color-dark;
 }
 
 .title-overhead {
     color: rgb(245, 224, 191) !important;
     font-family: $title-font;
     font-weight: 700;
+    font-size: 14px;
 }
 
 .flip {
@@ -111,6 +117,7 @@ a {
     padding-right: 8rem;
 }
 
+// Buttons
 .btn-main {
     border: 2px solid $primary-color;
     color: $font-color  !important;
@@ -142,7 +149,7 @@ a {
     font-family: $text-font;
     font-weight: $text-weight;
     color: white !important;
-    font-size: $text-size-m;
+    font-size: $text-size;
 
     &:hover {
         color: #dddddd !important;
@@ -165,93 +172,6 @@ a {
     height: 2em !important;
 }
 
-// Über mich
-
-.uebermich {
-    left: 50px;
-}
-
-.uebermich-text {
-    top: 50px;
-    background-color: #1c1c1c;
-    left: -50px;
-}
-
-@media (max-width: 575px) {
-    .uebermich {
-        left: -55px;
-    }
-    .uebermich-text {
-        top: -40px;
-        left: 100px;
-    }
-}
-
-@media (min-width: 575px) {
-    .uebermich {
-        left: -55px;
-    }
-    .uebermich-text {
-        top: -40px;
-        left: 150px;
-    }
-}
-
-@media (min-width: 768px) {
-    .uebermich {
-        left: 50px;
-    }
-    .uebermich-text {
-        top: 50px;
-        left: -50px;
-    }
-}
-
-@media (min-width: 992px) {
-    .uebermich {
-        left: 50px;
-    }
-    .uebermich-text {
-        top: 50px;
-        left: -50px;
-    }
-}
-// Fotografie
-.fotografie-grid {
-    background-color: #eeeeee;
-    box-shadow: 5px 0px 10px #cfcfcf;
-    border-radius: 5px;
-
-    .img-left {
-        border-radius: 5px 0px 0px 5px;
-    }
-
-    .img-right {
-        border-radius: 0px 5px 5px 0px;
-    }
-}
-
-#galerie {
-    font-size: 40px;
-}
-
-.card {
-    background-color: transparent;
-    border: none;
-}
-
-.galerie-grid-img {
-    img {
-        transition: 0.2s;
-    }
-
-    &:hover {
-        img {
-            filter: brightness(.6);
-        }
-    }
-}
-
 // Media Query
 @media (max-width: 992px) {
     .navbar-nav {
@@ -263,6 +183,77 @@ a {
     .nav-item {
         margin-top: 1rem !important;
         margin-bottom: 1rem !important;
+    }
+}
+
+// Über mich
+.uebermich {
+    left: 50px;
+}
+.uebermich-text {
+    top: 50px;
+    background-color: #1c1c1c;
+    left: -50px;
+}
+@media (max-width: 575px) {
+    .uebermich {
+        left: -55px;
+    }
+    .uebermich-text {
+        top: -40px;
+        left: 100px;
+    }
+}
+@media (min-width: 575px) {
+    .uebermich {
+        left: -55px;
+    }
+    .uebermich-text {
+        top: -40px;
+        left: 150px;
+    }
+}
+@media (min-width: 768px) {
+    .uebermich {
+        left: 50px;
+    }
+    .uebermich-text {
+        top: 50px;
+        left: -50px;
+    }
+}
+@media (min-width: 992px) {
+    .uebermich {
+        left: 50px;
+    }
+    .uebermich-text {
+        top: 50px;
+        left: -50px;
+    }
+}
+
+// Fotografie
+.fotografie-grid {
+    background-color: #eeeeee;
+    box-shadow: 5px 0px 10px #cfcfcf;
+    border-radius: 5px;
+    .img-left {
+        border-radius: 5px 0px 0px 5px;
+    }
+    .img-right {
+        border-radius: 0px 5px 5px 0px;
+    }
+}
+
+.galerie-grid-img {
+    img {
+        transition: 0.2s;
+    }
+
+    &:hover {
+        img {
+            filter: brightness(.6);
+        }
     }
 }
 
@@ -285,20 +276,6 @@ a {
         width: 62px;
         height: auto;
     }
-
-    .java-img {
-        width: 60px;
-        height: 60px;
-    }
-
-    h1 {
-        margin-bottom: 0 !important;
-        font-size: 40px;
-    }
-
-    p {
-        font-size: $text-size-m;
-    }
 }
 
 @media (max-width: 992px) {
@@ -312,142 +289,81 @@ a {
         padding-left: 3rem;
         padding-right: 3rem;
     }
+
     .projekte {
-        padding-left: 0.5rem!important;
-        padding-right: 0.5rem!important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
     }
 }
 
 // Projekte
 .projekte {
-    h1 {
-        font-size: 40px;
-    }
-
     li {
         list-style: none;
         border-left: 2px solid #999999;
-        font-size: $text-size-lg;
+        font-size: 18px;
         margin-left: 1px !important;
         font-family: $text-font;
         color: #999999;
         transition: 0.3s;
-
         a {
             color: inherit;
             text-decoration: none !important;
             transition: 0.3s;
-
             &:hover {
                 color: #ffffff;
             }
         }
     }
-
     .li-active {
         border-left: 4px solid $primary-color;
         margin-left: 0 !important;
         margin-right: 1px !important;
         color: $font-color;
         transition: 0.3s;
-
         a {
             color: inherit;
             text-decoration: none !important;
             transition: 0.3s;
-
             &:hover {
                 color: #d4d4d4;
             }
         }
     }
-}
-
-.projekte-text {
-    h1 {
-        font-size: 26px;
-    }
-
     .date {
         font-size: 14px;
         font-weight: 500;
     }
 }
 
-// Fotografie
-#fotografie {
-    h1 {
-        font-size: 40px;
-    }
-}
-
-.text-fotografie p {
-    font-size: $text-size-m;
-}
-
 // Carousel
-
 .carousel-item img {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
 }
 
-.carousel-caption {
-    right: 10% !important;
-    text-align: start !important;
-    left: 7% !important;
-
-    h1 {
-        font-size: 44px;
-    }
-
-    p {
-        font-size: $text-size-lg;
-    }
-
-    a {
-        color: $font-color;
-    }
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-    width: unset !important;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-// Kontakt
-#kontakt {
-    h1 {
-        font-size: 40px;
-    }
-}
-
+// Kontakt Form
 form {
     label {
         font-family: $text-font;
-        font-size: $text-size-sm;
+        font-size: 14px;
         font-weight: 600;
-        color: #0b0b0b;
+        color: $font-color-dark;
     }
-
     .form-group input,
     .form-group textarea {
         border: 1px solid rgb(0, 0, 0);
         background-color: #ebebeb;
-        color: #0b0b0b;
+        color: $font-color-dark;
         font-family: $text-font;
-
         &:focus {
             background-color: #f4f4f4;
-            color: #0b0b0b;
+            color: $font-color-dark;
         }
     }
-
     .btn-main {
-        color: #0b0b0b !important;
+        color: $font-color-dark !important;
         font-family: $text-font;
         font-weight: 600;
         border: 3px solid $primary-color;
@@ -457,19 +373,20 @@ form {
 // Footer
 footer {
     li a {
-        color: #0b0b0b;
+        color: $font-color-dark;
         font-family: $text-font;
         font-weight: $text-weight;
-        font-size: $text-size-sm;
+        font-size: 14px;
         transition: 0.3s;
+        &:hover {
+            color: #999999;
+        }
     }
-
     li {
         position: relative;
     }
-
     .navbar-brand {
-        color: #0b0b0b;
+        color: $font-color-dark;
         font-size: 30px;
         transition: 0.3s;
 
@@ -477,7 +394,6 @@ footer {
             color: #999999;
         }
     }
-
     .icons {
         a {
             position: relative;
@@ -487,95 +403,104 @@ footer {
             display: inline-block;
             margin: 0;
             padding: 0;
-            background-color: #505050;
             transition: 0.3s;
-
-            &:hover {
-                background-color: #3a3a3a;
-            }
         }
-
         i {
             position: absolute;
             top: 50%;
             left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             font-size: 20px;
         }
     }
-
     .text-muted {
         color: #797979 !important;
     }
-
     .btn-outline-light {
         color: #0b0b0b;
         border: 2px solid #0b0b0b !important;
     }
 }
 
-.copyright {
-    font-size: $text-size-m;
+@media (min-width: 992px) {
+    .ul-navbar {
+        top: 35px;
+        position: relative;
+    }
 }
 
-// Fotografie Unterseite
+@media (max-width: 576px) {
+    footer {
+        .text-muted {
+            font-size: 12px;
+        }
+        .icons {
+            a {
+                width: 34px;
+                height: 34px;
+            }
+            i {
+                font-size: 16px;
+            }
+        }
+        .navbar-brand {
+            font-size: 24px;
+        }
+    }
+    .ul-navbar li {
+        padding-right: 0.2rem !important;
+        padding-left: 0.2rem !important;
+        a {
+            font-size: 12px;
+        }
+    }
+}
+
+// Fotografie Sub Pages
 .image-collection {
     margin-right: 0 !important;
-    padding: 2rem 0rem 2rem 7rem !important;
+    padding: 2rem 0rem 2rem 7rem;
 }
-
 .div-collection {
     left: 3%;
     padding-left: 0 !important;
-
     h1 {
         font-size: 40px;
     }
-
     p {
         max-width: 35vw;
         font-weight: 400;
-        font-size: $text-size-m;
+        font-size: $text-size;
     }
 }
-
 @media (max-width: 992px) {
     .div-collection p {
         max-width: 45vw;
     }
 }
-
 @media (max-width: 575px) {
     .div-collection {
         top: 13%;
-
         h1 {
             font-size: 35px;
         }
-
         p {
             font-size: 14px;
             max-width: 100%;
             padding-right: 1rem;
         }
     }
-
     .col-collection {
         padding-left: 0 !important;
     }
-
     .image-collection {
         padding: 2rem 1rem 1rem 1rem !important;
     }
 }
-
 .collection-back {
     top: 5%;
     left: 3%;
 }
-
 .collection-scroll {
     bottom: 2%;
     left: 3%;
@@ -586,10 +511,18 @@ footer {
 // Grid
 .grid-sizer,
 .grid-item {
-    width: 25%;
+    width: 20%;
     padding: 5px;
 }
-
 .grid-item-2 {
-    width: 50%;
+    width: 40%;
+}
+@media (max-width: 992px) {
+    .grid-sizer,
+    .grid-item {
+        width: 25%;
+    }
+    .grid-item-2 {
+        width: 50%;
+    }
 }

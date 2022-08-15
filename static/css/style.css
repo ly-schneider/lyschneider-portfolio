@@ -16,6 +16,13 @@ body {
 
 h1 {
   font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: #ffffff;
@@ -23,18 +30,19 @@ h1 {
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   color: #ffffff;
 }
 
 a {
-  color: #cccccc;
+  color: #f5e0bf;
+  font-weight: 500;
   text-decoration: none !important;
 }
 
 a:hover {
-  color: #dddddd;
+  color: #f3ede2;
 }
 
 .background-dark {
@@ -64,18 +72,19 @@ a:hover {
   color: #0b0b0b;
 }
 
-.text-dark {
-  color: #0b0b0b;
-}
-
 .text-light {
   color: #ffffff;
+}
+
+.text-dark {
+  color: #0b0b0b;
 }
 
 .title-overhead {
   color: #f5e0bf !important;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
+  font-size: 14px;
 }
 
 .flip {
@@ -122,7 +131,7 @@ a:hover {
 
 .nav-link {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: white !important;
   font-size: 16px;
 }
@@ -135,7 +144,7 @@ a:hover {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   color: #ffffff;
-  font-size: 28px;
+  font-size: 40px;
 }
 
 .navbar-toggler {
@@ -145,6 +154,18 @@ a:hover {
 .navbar-toggler-icon {
   width: 2em !important;
   height: 2em !important;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1.5rem !important;
+    margin-right: 0 !important;
+  }
+  .nav-item {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
 }
 
 .uebermich {
@@ -212,15 +233,6 @@ a:hover {
   border-radius: 0px 5px 5px 0px;
 }
 
-#galerie {
-  font-size: 40px;
-}
-
-.card {
-  background-color: transparent;
-  border: none;
-}
-
 .galerie-grid-img img {
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -229,18 +241,6 @@ a:hover {
 .galerie-grid-img:hover img {
   -webkit-filter: brightness(0.6);
           filter: brightness(0.6);
-}
-
-@media (max-width: 992px) {
-  .navbar-nav {
-    text-align: center;
-    margin-top: 1.5rem !important;
-    margin-right: 0 !important;
-  }
-  .nav-item {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
-  }
 }
 
 .image-section {
@@ -267,20 +267,6 @@ a:hover {
   height: auto;
 }
 
-.informatik .java-img {
-  width: 60px;
-  height: 60px;
-}
-
-.informatik h1 {
-  margin-bottom: 0 !important;
-  font-size: 40px;
-}
-
-.informatik p {
-  font-size: 16px;
-}
-
 @media (max-width: 992px) {
   .icon-container {
     display: none;
@@ -296,10 +282,6 @@ a:hover {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
   }
-}
-
-.projekte h1 {
-  font-size: 40px;
 }
 
 .projekte li {
@@ -344,21 +326,9 @@ a:hover {
   color: #d4d4d4;
 }
 
-.projekte-text h1 {
-  font-size: 26px;
-}
-
-.projekte-text .date {
+.projekte .date {
   font-size: 14px;
   font-weight: 500;
-}
-
-#fotografie h1 {
-  font-size: 40px;
-}
-
-.text-fotografie p {
-  font-size: 16px;
 }
 
 .carousel-item img {
@@ -366,35 +336,6 @@ a:hover {
      object-fit: cover;
   width: 100vw;
   height: 100vh;
-}
-
-.carousel-caption {
-  right: 10% !important;
-  text-align: start !important;
-  left: 7% !important;
-}
-
-.carousel-caption h1 {
-  font-size: 44px;
-}
-
-.carousel-caption p {
-  font-size: 18px;
-}
-
-.carousel-caption a {
-  color: #ffffff;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  width: unset !important;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-#kontakt h1 {
-  font-size: 40px;
 }
 
 form label {
@@ -428,10 +369,14 @@ form .btn-main {
 footer li a {
   color: #0b0b0b;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+footer li a:hover {
+  color: #999999;
 }
 
 footer li {
@@ -457,13 +402,8 @@ footer .icons a {
   display: inline-block;
   margin: 0;
   padding: 0;
-  background-color: #505050;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-footer .icons a:hover {
-  background-color: #3a3a3a;
 }
 
 footer .icons i {
@@ -471,7 +411,7 @@ footer .icons i {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 20px;
 }
 
@@ -484,13 +424,39 @@ footer .btn-outline-light {
   border: 2px solid #0b0b0b !important;
 }
 
-.copyright {
-  font-size: 16px;
+@media (min-width: 992px) {
+  .ul-navbar {
+    top: 35px;
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .text-muted {
+    font-size: 12px;
+  }
+  footer .icons a {
+    width: 34px;
+    height: 34px;
+  }
+  footer .icons i {
+    font-size: 16px;
+  }
+  footer .navbar-brand {
+    font-size: 24px;
+  }
+  .ul-navbar li {
+    padding-right: 0.2rem !important;
+    padding-left: 0.2rem !important;
+  }
+  .ul-navbar li a {
+    font-size: 12px;
+  }
 }
 
 .image-collection {
   margin-right: 0 !important;
-  padding: 2rem 0rem 2rem 7rem !important;
+  padding: 2rem 0rem 2rem 7rem;
 }
 
 .div-collection {
@@ -550,11 +516,21 @@ footer .btn-outline-light {
 
 .grid-sizer,
 .grid-item {
-  width: 25%;
+  width: 20%;
   padding: 5px;
 }
 
 .grid-item-2 {
-  width: 50%;
+  width: 40%;
+}
+
+@media (max-width: 992px) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+  }
+  .grid-item-2 {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

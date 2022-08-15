@@ -56,10 +56,22 @@
             <img src="/img/fotografie/white-flower.jpg" class="d-block" alt="White Flower">
         </div>
         <div class="carousel-item">
+            <img src="/img/fotografie/image-macro-1.jpg" class="d-block" alt="Autmn leafes">
+        </div>
+        <div class="carousel-item">
             <img src="/img/fotografie/cape-may/cape-may.jpg" class="d-block" alt="Cape May">
         </div>
         <div class="carousel-item">
+            <img src="/img/fotografie/icf-bern/icf-bern-summer-38.jpg" class="d-block" alt="ICF Bern">
+        </div>
+        <div class="carousel-item">
             <img src="/img/fotografie/lager/lager-1.jpg" class="d-block" alt="Lager">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/fotografie/image-anja.jpg" class="d-block" alt="Portrait">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/fotografie/bike/image-bike-2.jpg" class="d-block" alt="Bike">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -77,20 +89,23 @@
 <section class="background-dark p-6 navbar-trigger" data-gsap-color="#0b0b0b" id="uebermich">
     <div class="container d-inline">
         <div class="row justify-content-center position-relative pb-5 uebermich">
-            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 col-10">
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 col-10" id="img-animation" style="opacity: 0; transform: translate(-200px, 0px);">
                 <img src="/img/levyn-portrait.jpg" alt="Portrait of myself" class="img-fluid">
             </div>
-            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 col-10 p-4 d-block position-relative d-flex flex-column uebermich-text">
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 col-10 p-4 d-block position-relative d-flex flex-column uebermich-text" id="ueber-animation" style="opacity: 0; transform: translate(200px, 0px);">
                 <p class="text-center mb-0 title-overhead">etwas</p>
                 <h1 class="text-center mb-3">Über mich</h1>
-                <p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt
-                    ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                    dolores <br><br>
-                    et ea rebum. Stet clita kasd gubergren, no sea. Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Neque sed earum dolor assumenda laborum nostrum aliquam numquam, deleniti odit ipsa officiis?
-                    <br><br>Reprehenderit laboriosam accusantium ad aut dicta culpa dolor! Iure?
+                <p class="mt-2">Mein Name ist Levyn und ich lebe in der Schweiz. Ich habe meine Leidenschaft für
+                    fotografieren mit 8 Jahren entdeckt. Allerdings fotografiere ich erst seit ich 13 bin auf
+                    "professionelle" Art.<br><br> Mit Videografie, auch Filmemachen genannt, habe ich erst seit Neuem
+                    angefangen
+                    und daher auch noch keine öffentlichen Projekte zum Zeigen. <a href="#fotografie">Hier</a> kannst du
+                    mehr über meine
+                    Fotografie lesen.
+                    <br><br>
+                    Webentwicklung mache ich seit ich 11 bin. Ich hatte bereits die Möglichkeit, bei offiziellen
+                    Projekten mitzuhelfen. Wenn du mehr über dieses Thema lesen willst, schau <a
+                        href="#informatik">hier</a>.
                 </p>
                 <button class="mt-auto btn-main btn mx-3">Kontaktiere mich</button>
             </div>
@@ -102,30 +117,30 @@
     <div class="container-fluid px-0 p-6">
         <div class="row pt-2">
             <div class="col-12 mb-4">
-                <h1 class="text-center mt-0">Fotografie</h1>
+                <h1 class="text-center mt-0 fotografie-animation" style="opacity: 0;">Fotografie</h1>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row justify-content-center fotografie-grid">
+        <div class="row justify-content-center fotografie-grid fotografie-animation" style="opacity: 0;">
             <div class="col-lg-6 px-0">
                 <img src="/img/fotografie/cape-may/cape-may.jpg" alt="Cape May" class="img-fluid img-left">
             </div>
             <div class="col-lg-6 text-center d-flex flex-column">
-                <h1 class="mt-4">Anfang</h1>
-                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a omnis officiis
-                    labore
-                    consequatur unde quo facilis animi laboriosam. Suscipit fugiat architecto, reprehenderit commodi
-                    asperiores aliquam illum recusandae aliquid accusantium!</p>
+                <p class="my-auto">Im Herbst 2016, während einer Reise in Afrika, durfte ich zum ersten Mal eine Kamera
+                    brauchen, und ich liebte es, Bilder zu machen. Zu meinem 12. Geburtstag bekam ich meine erste eigene
+                    Kamera (Canon 2000D). Ich habe nur 1 Jahr mit dieser Kamera fotografiert, aber sie genügte meinen
+                    Standart schnell nicht mehr</p>
             </div>
         </div>
-        <div class="row mt-4 justify-content-center fotografie-grid">
+        <div class="row mt-4 justify-content-center fotografie-grid fotografie-animation" style="opacity: 0;">
             <div class="col-lg-6 text-center d-flex flex-column">
-                <h1 class="mt-4">Anfang</h1>
-                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a omnis officiis
-                    labore
-                    consequatur unde quo facilis animi laboriosam. Suscipit fugiat architecto, reprehenderit commodi
-                    asperiores aliquam illum recusandae aliquid accusantium!</p>
+                <p class="my-auto">Zu meinem 13. Geburtstag bekam ich dann meine aktuelle Sony Alpha 7ii. Bis jetzt liebe
+                    ich diese Kamera, und ich kann sie jedem empfehlen. Fotografieren ist neben Unihockey mein grösstes
+                    Hobby.
+                    <br><br>
+                    Hier unten siehst du einige meiner Lieblings Shootings.
+                </p>
             </div>
             <div class="col-lg-6 px-0">
                 <img src="/img/fotografie/white-flower.jpg" alt="Cape May" class="img-fluid img-right">
@@ -134,95 +149,93 @@
     </div>
     <div class="container pt-5">
         <div class="row">
-            <h1 class="text-center mt-5 p-5 pb-0" id="galerie">Galerie</h1>
-            <p class="text-center mb-5 text-dark">Gewisse Bilder kann man anklicken um mehr Informationen zu erhalten.
+            <h1 class="text-center mt-5 p-5 pb-0 fotografie-animation" style="opacity: 0;" id="galerie">Galerie</h1>
+            <p class="text-center mb-5 text-dark fotografie-animation" style="opacity: 0;">Gewisse Bilder kann man anklicken um mehr Informationen zu erhalten.
             </p>
-            <div class="grid mx-0 px-0 mb-5" id="loading-more">
+            <div class="grid mx-0 px-0 mb-5 fotografie-animation" style="opacity: 0;">
                 <div class="grid-sizer"></div>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/cape-may/cape-may-9-high.jpg"
+                <a href="/cape-may/" class="galerie-grid-img"><img src="/img/fotografie/cape-may/cape-may-9-high.jpg"
                         alt="Cape May" class="grid-item grid-item-2">
                 </a>
-                <a aria-disabled="true"><img src="/img/fotografie/image-autmn.jpg" alt="Authmn leafes" class="grid-item grid-item-2"></a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/wedding-xenia-joris/wedding-1.jpg"
-                        alt="Wedding" class="grid-item">
+                <a aria-disabled="true"><img src="/img/fotografie/image-autmn.jpg" alt="Authmn leafes"
+                        class="grid-item grid-item-2"></a>
+                <a href="/wedding-xenia-joris/" class="galerie-grid-img"><img
+                        src="/img/fotografie/wedding-xenia-joris/wedding-1.jpg" alt="Wedding" class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-3.jpg"
-                        alt="Lager 3" class="grid-item">
+                <a href="/lager/" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-3.jpg" alt="Lager 3"
+                        class="grid-item">
                 </a>
-                <a aria-disabled="true"><img src="/img/fotografie/image-anja.jpg" alt="Portrait"
-                        class="grid-item"></a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-120.jpg"
+                <a href="/icf-bern/" class="galerie-grid-img"><img src="/img/fotografie/icf-bern/ICF-BERN-17.jpg"
+                        alt="ICF Bern" class="grid-item">
+                </a>
+                <a aria-disabled="true"><img src="/img/fotografie/image-anja.jpg" alt="Portrait" class="grid-item"></a>
+                <a aria-disabled="true"><img src="/img/fotografie/image-new-york.jpg" alt="Image Macro"
+                        class="grid-item grid-item-2">
+                </a>
+                <a href="/lager/" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-120.jpg"
                         alt="Lager 120" class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/wedding-xenia-joris/wedding-17.jpg"
-                        alt="Wedding 17" class="grid-item">
+                <a href="/wedding-xenia-joris/" class="galerie-grid-img"><img
+                        src="/img/fotografie/wedding-xenia-joris/wedding-17.jpg" alt="Wedding 17" class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/image-new-york.jpg"
-                        alt="Image Macro" class="grid-item grid-item-2">
+                <a aria-disabled="true"><img src="/img/fotografie/image-macro-1.jpg" alt="Image Macro"
+                        class="grid-item"></a>
+                <a aria-disabled="true"><img src="/img/fotografie/image-macro.jpg" alt="Image Macro"
+                        class="grid-item"></a>
+                <a href="/lager/" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-1.jpg" alt="Lager"
+                        class="grid-item">
                 </a>
-                <a aria-disabled="true"><img src="/img/fotografie/image-macro-1.jpg"
-                alt="Image Macro" class="grid-item"></a>
-                <a aria-disabled="true"><img src="/img/fotografie/image-macro.jpg"
-                alt="Image Macro" class="grid-item"></a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/noe/noe-9.jpg"
-                        alt="Portrait" class="grid-item">
+                <a aria-disabled="true"><img src="/img/fotografie/noe/noe-9.jpg" alt="Portrait" class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/icf-bern/icf-bern-4.jpg"
+                <a href="/icf-bern/" class="galerie-grid-img"><img src="/img/fotografie/icf-bern/icf-bern-4.jpg"
                         alt="ICF Bern" class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/icf-bern/icf-bern-summer-38.jpg"
+                <a href="/icf-bern/" class="galerie-grid-img"><img src="/img/fotografie/icf-bern/icf-bern-summer-38.jpg"
                         alt="ICF Bern" class="grid-item grid-item-2">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/icf-bern/icf-bern-36.jpg"
+                <a href="/icf-bern/" class="galerie-grid-img"><img src="/img/fotografie/icf-bern/icf-bern-36.jpg"
                         alt="ICF Bern" class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/icf-bern/icf-bern-summer-30.jpg"
+                <a href="/icf-bern/" class="galerie-grid-img"><img src="/img/fotografie/icf-bern/icf-bern-summer-30.jpg"
                         alt="ICF Bern" class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/icf-bern/ICF-BERN-17.jpg"
-                        alt="ICF Bern" class="grid-item">
+                <a href="/lager/" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-1.jpg" alt="Lager"
+                        class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-1.jpg"
-                        alt="Lager" class="grid-item">
+                <a href="/lager/" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-126.jpg" alt="Lager"
+                        class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-59.jpg"
-                        alt="Lager" class="grid-item">
+                <a href="/bike/" class="galerie-grid-img"><img src="/img/fotografie/bike/image-bike.jpg" alt="Bike"
+                        class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-126.jpg"
-                        alt="Lager" class="grid-item">
+                <a href="/lager/" class="galerie-grid-img"><img src="/img/fotografie/lager/lager-113.jpg" alt="Lager"
+                        class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/bike/image-bike-2.jpg"
-                        alt="Bike" class="grid-item grid-item-2">
+                <a href="/bike/" class="galerie-grid-img"><img src="/img/fotografie/bike/image-bike-2.jpg" alt="Bike"
+                        class="grid-item grid-item-2">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/bike/image-bike-1.jpg"
-                        alt="Bike" class="grid-item">
+                <a href="/bike/" class="galerie-grid-img"><img src="/img/fotografie/bike/image-bike-1.jpg" alt="Bike"
+                        class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/bike/image-bike-4.jpg"
-                        alt="Bike" class="grid-item">
+                <a href="/bike/" class="galerie-grid-img"><img src="/img/fotografie/bike/image-bike-4.jpg" alt="Bike"
+                        class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/bike/image-bike.jpg"
-                        alt="Bike" class="grid-item">
-                </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/cape-may/cape-may-5.jpg"
-                        alt="Cape May" class="grid-item grid-item-2">
-                </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/cape-may/cape-may-6.jpg"
-                        alt="Cape May" class="grid-item grid-item-2">
-                </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/cape-may/cape-may-8.jpg"
+                <a href="/cape-may/" class="galerie-grid-img"><img src="/img/fotografie/cape-may/cape-may-2.jpg"
                         alt="Cape May" class="grid-item">
                 </a>
-                <a href="#" class="galerie-grid-img"><img src="/img/fotografie/cape-may/cape-may-2.jpg"
+                <a href="/cape-may/" class="galerie-grid-img"><img src="/img/fotografie/cape-may/cape-may-5.jpg"
+                        alt="Cape May" class="grid-item grid-item-2">
+                </a>
+                <a href="/cape-may/" class="galerie-grid-img"><img src="/img/fotografie/cape-may/cape-may-6.jpg"
+                        alt="Cape May" class="grid-item grid-item-2">
+                </a>
+                <a href="/cape-may/" class="galerie-grid-img"><img src="/img/fotografie/cape-may/cape-may-8.jpg"
                         alt="Cape May" class="grid-item">
                 </a>
-                <a aria-disabled="true"><img src="/img/fotografie/snow/snow-1.jpg"
-                alt="Snow" class="grid-item"></a>
-                <a aria-disabled="true"><img src="/img/fotografie/snow/snow-2.jpg"
-                alt="Snow" class="grid-item"></a>
-                <a aria-disabled="true"><img src="/img/fotografie/snow/snow-3.jpg"
-                alt="Snow" class="grid-item"></a>
-                <a aria-disabled="true"><img src="/img/fotografie/snow/snow-4.jpg"
-                alt="Snow" class="grid-item"></a>
+                <a aria-disabled="true"><img src="/img/fotografie/snow/snow-1.jpg" alt="Snow" class="grid-item"></a>
+                <a aria-disabled="true"><img src="/img/fotografie/snow/snow-2.jpg" alt="Snow" class="grid-item"></a>
+                <a aria-disabled="true"><img src="/img/fotografie/snow/snow-3.jpg" alt="Snow" class="grid-item"></a>
+                <a aria-disabled="true"><img src="/img/fotografie/snow/snow-4.jpg" alt="Snow" class="grid-item"></a>
             </div>
         </div>
     </div>
@@ -231,19 +244,24 @@
 <section class="informatik background-dark py-5 navbar-trigger" data-gsap-color="#0b0b0b" id="informatik">
     <div class="container-fluid px-6 pt-5 mt-5">
         <div class="row">
-            <div class="col-lg-5 col-md-8">
-                <h1 class="mt-0">Informatik</h1>
+            <div class="col-lg-5 col-md-8" id="informatik-text-animation" style="opacity: 0; transform: translate(-200px, 0px);">
+                <h1 class="mt-0 mb-0">Informatik</h1>
 
-                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illo suscipit, optio
-                    pariatur nisi
-                    beatae officia doloribus nihil ratione maxime nulla ducimus iste autem hic tempora incidunt laborum,
-                    tempore rerum?</p>
-                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illo suscipit, optio
-                    pariatur nisi
-                    beatae officia doloribus nihil ratione maxime nulla ducimus iste autem hic</p>
+                <p class="mt-4">
+                    Die Informatik war immer etwas was mich sehr interessiert hat. Ich liebe den Prozess zu sehen, wie
+                    man z.B. von einer leeren Website zu einer lebvollen und informativen Website kommt.</p>
+                <p class="mt-4">Ich habe früh angefangen, HTML und CSS zu lernen, weil das recht einfache Sprachen sind
+                    um zu lernen und trotzdem lernt man viel über die Informatik. Später lernte ich dann zusätzlich noch
+                    andere Sprachen wie JavaScript, PHP, Python und Java.</p>
+                <p class="mt-4">Ich hatte auch das Privileg bei einigen Webentwicklungsprojekten mitarbeiten zu können
+                    oder sogar leiten zu können. Unten siehst du Projekte, an denen ich bereits gearbeitet habe.</p>
+                <p class="mt-4">An der Informatik interessiert mich das Thema Cybersecurity sehr und möchte mich in
+                    diesem Thema aus- und weiterbilden und dies zu meinem Beruf machen.</p>
+                <p class="mt-4">Fun fact: Diese Website wo du dich aktuell befindest, wurde alleine von Null auf ohne
+                    Template entwickelt.</p>
                 <a href="#projekte"><button class="btn btn-main mt-4">Projekte</button></a>
             </div>
-            <div class="col-lg-7 mt-5 icon-container">
+            <div class="col-lg-7 mt-5 icon-container" id="informatik-icons-animation" style="opacity: 0; transform: translate(200px, 0px);">
                 <div class="row justify-content-evenly">
                     <div class="col-1 mt-4">
                         <img src="/img/icon/html-icon.png" alt="Web Icon" class="img-fluid">
@@ -287,20 +305,19 @@
                 <li class="text-center p-3 ps-0" id="3">
                     <a onclick="changeFunction()" href="javascript:void(0)">Preisberechner</a>
                 </li>
-                <li class="text-center p-3 ps-0" id="4">
-                    <a onclick="changeFunction()" href="javascript:void(0)">Wichteln</a>
-                </li>
             </ul>
             <div class="col-6 ps-0 projekte-text">
-                <h1 class="mb-0" id="projekte-title">Lorem Title</h1>
+                <h3 class="mb-0" id="projekte-title">BzH Bern</h3>
                 <p class="mb-3 date title-overhead" id="projekte-datum">August 2019 - Jetzt</p>
                 <p id="projekte-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate accusantium natus
-                    dolores. Distinctio ut fuga odit, minus debitis maiores error, hic quis eos praesentium neque ab
-                    veniam placeat vitae?<br><br>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate accusantium natus
-                    dolores. Distinctio ut fuga odit, minus debitis maiores error, hic quis eos praesentium neque ab
-                    veniam placeat vitae?
+                    Das Projekt BzH Bern (Bildung zu Hause Bern) war eins meiner ersten und offiziellen Projekten. Der
+                    Hintergrund dieses Projektes war das der Verein BzH Bern unbedingt eine Website bräuchten. Meine
+                    Mutter ist im Vorstand und hat dann mich empfohlen obwohl ich zu dem Zeitpunkt noch fast keine
+                    Erfahrung mit Webdesign gehabt habe.
+                    <br><br>
+                    Allerdings ist es ein Projekt wo ich sehr viel lernen konnte / immernoch kann.
+                    <br><br>Link zu der Website: <a href='https://www.bildungzuhause-bern.ch/'
+                        target='_blank'>bildungzuhause-bern.ch</a>
                 </p>
             </div>
         </div>
@@ -347,15 +364,12 @@
     </div>
 </section>
 <!-- Footer -->
-<footer class="pt-3 background-light-2">
-    <div class="pt-3 pb-3">
+<footer class="pt-3 pt-lg-0 background-light-2">
+    <div class="pt-3 pt-lg-0 pb-3">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-3">
-                    <a class="navbar-brand" href="/" id="lyschneider">lyschneider</a>
-                </div>
-                <div class="col-6 text-center">
-                    <ul class="list-unstyled mb-4 mb-lg-0">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <ul class="list-unstyled mb-4 mb-lg-0 mb-md-3 ul-navbar" style="z-index: 2;">
                         <li class="d-inline px-2"><a href="#uebermich">Über mich</a></li>
                         <li class="d-inline px-2"><a href="#informatik">Informatik</a></li>
                         <li class="d-inline px-2"><a href="#projekte">Projekte</a></li>
@@ -363,7 +377,11 @@
                         <li class="d-inline px-2"><a href="#kontakt">Kontakt</a></li>
                     </ul>
                 </div>
-                <div class="col-3 text-end">
+                <div class="w-100"></div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-6">
+                    <a class="navbar-brand" href="/" id="lyschneider">lyschneider</a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-6 text-end icons">
                     <a class="btn btn-outline-light btn-floating m-1 rounded-circle"
                         href="mailto:lyschneider@icloud.com" role="button"><i class="fa-solid fa-envelope"></i></a>
                     <a class="btn btn-outline-light btn-floating m-1 rounded-circle"
