@@ -1,0 +1,89 @@
+{{ define "style" }}
+<style>
+    html,
+    body {
+        background-color: #131313;
+    }
+</style>
+{{ end }}
+{{ define "main" }}
+
+<div class="container me-0 pe-0 d-flex align-items-center min-vh-100">
+    <div class="position-absolute collection-back">
+        <a href="javascript:history.back();"><button class="btn btn-back"><i
+                    class="fa-solid fa-arrow-left"></i></button></a>
+    </div>
+    <div class="row d-flex align-items-center">
+        <div class="position-absolute col div-collection">
+            <h1>ICF Bern</h1>
+            <p>Ich bin einer der haupt Fotografen dort und ich liebe es neues auszuprobieren weil niemand was wirklich erwartet. Ich konnte auch meine Fotografie sehr verbessern dort.</p>
+        </div>
+        <div class="col col-collection">
+            <img src="/img/fotografie/icf-bern/icf-bern-summer-38.jpg" class="d-block w-100 image-collection" alt="ICF Bern">
+        </div>
+    </div>
+    <div class="position-absolute collection-scroll">
+        <p>SCROLL<i class="fa-solid fa-arrow-down mt-2"></i></p>
+    </div>
+</div>
+<div class="container-fluid mx-0 px-0 mt-5 mb-5 pb-5">
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <img src="/img/fotografie/icf-bern/icf-bern-summer-38.jpg" alt="ICF Bern 6" class="grid-item grid-item-2">
+        <img src="/img/fotografie/icf-bern/icf-bern-summer-36.jpg" alt="ICF Bern 6" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-summer-27.jpg" alt="ICF Bern 6" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-summer-41.jpg" alt="ICF Bern 6" class="grid-item">
+        <img src="/img/fotografie/icf-bern/ICF-BERN-17.jpg" alt="ICF Bern 2" class="grid-item grid-item-2">
+        <img src="/img/fotografie/icf-bern/icf-bern-4.jpg" alt="ICF Bern 1" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-6.jpg" alt="ICF Bern 1" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-12.jpg" alt="ICF Bern 1" class="grid-item">
+        <img src="/img/fotografie/icf-bern/ICF-BERN-3.jpg" alt="ICF Bern 1" class="grid-item">
+        <img src="/img/fotografie/icf-bern/ICF-BERN-5.jpg" alt="ICF Bern 1" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-18.jpg" alt="ICF Bern 3" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-36.jpg" alt="ICF Bern 4" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-2205-4.jpg" alt="ICF Bern" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-summer-73.jpg" alt="ICF Bern 5" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-summer-76.jpg" alt="ICF Bern 5" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-summer-77.jpg" alt="ICF Bern 5" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-summer-30.jpg" alt="ICF Bern 6" class="grid-item">
+        <img src="/img/fotografie/icf-bern/icf-bern-summer-33.jpg" alt="ICF Bern 6" class="grid-item">
+        <img src="/img/fotografie/icf-bern/ICF-Bern-Graduation-20.jpg" alt="ICF Bern 6" class="grid-item">
+    </div>
+</div>
+<footer class="pb-0 dark-bg-2 pt-5">
+    <div class="py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <a class="navbar-brand" href="/" id="lyschneider">lyschneider</a>
+                </div>
+                <div class="col-6 text-center mt-3">
+                    <p class="text-center text-muted copyright">© 2022 by Levyn Schneider</p>
+                </div>
+                <div class="col-3 text-end">
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="mailto:lyschneider@icloud.com" role="button"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.instagram.com/ly.schneider/" target="_blank" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://github.com/ly-schneider" target="_blank" role="button"><i class="fab fa-github"></i
+                        ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{{ end }}
+
+{{ define "body_include" }}
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<script>
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+    })
+</script>
+
+{{ end }}
