@@ -1,3 +1,3 @@
 +++
-title = "Cape May | USA"
+title = "Cape May · Portfolio"
 +++

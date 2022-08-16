@@ -1,0 +1,94 @@
+{{ define "style" }}
+<style>
+    html,
+    body {
+        background-color: #131313;
+    }
+</style>
+{{ end }}
+{{ define "main" }}
+
+<div class="container me-0 pe-0 d-flex align-items-center min-vh-100">
+    <div class="position-absolute collection-back">
+        <a href="javascript:history.back();"><button class="btn btn-back"><i
+                    class="fa-solid fa-arrow-left"></i></button></a>
+    </div>
+    <div class="row d-flex align-items-center">
+        <div class="position-absolute col div-collection">
+            <h1>Lager</h1>
+            <p>In dieser Galerie sind einige meiner Lieblingsportraits. Die Bilder wurden in einem Lager gemacht. Ich hatte meine Kamera dabei und schoss ein paar Schnappschüsse und eine Kollegin wollte freiwillig für mich modeln.</p>
+        </div>
+        <div class="col col-collection">
+            <img src="/img/fotografie/lager/lager-1.jpg" class="d-block w-100 image-collection" alt="Cape May">
+        </div>
+    </div>
+    <div class="position-absolute collection-scroll">
+        <p>SCROLL<i class="fa-solid fa-arrow-down mt-2"></i></p>
+    </div>
+</div>
+<div class="container-fluid mx-0 px-0 mt-5 mb-5 pb-5">
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <img src="/img/fotografie/lager/lager-198.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-200.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-135.jpg" alt="Lager" class="grid-item grid-item-2">
+        <img src="/img/fotografie/lager/lager-201.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-45.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-59.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-126.jpg" alt="Lager" class="grid-item grid-item-2">
+        <img src="/img/fotografie/lager/lager-94.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-99.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-103.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-106.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-110.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-113.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-114.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-117.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-120.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-122.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-136.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-246.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-252.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-385.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-389.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-392.jpg" alt="Lager" class="grid-item">
+        <img src="/img/fotografie/lager/lager-393.jpg" alt="Lager" class="grid-item">
+    </div>
+</div>
+<footer class="pb-0 dark-bg-2 pt-5">
+    <div class="py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <a class="navbar-brand" href="/" id="lyschneider">lyschneider</a>
+                </div>
+                <div class="col-6 text-center mt-3">
+                    <p class="text-center text-muted copyright">© 2022 by Levyn Schneider</p>
+                </div>
+                <div class="col-3 text-end">
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="mailto:lyschneider@icloud.com" role="button"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.instagram.com/ly.schneider/" target="_blank" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://github.com/ly-schneider" target="_blank" role="button"><i class="fab fa-github"></i
+                        ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{{ end }}
+
+{{ define "body_include" }}
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<script>
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+    })
+</script>
+
+{{ end }}

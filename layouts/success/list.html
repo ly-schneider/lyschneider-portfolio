@@ -1,15 +1,21 @@
+{{ define "style" }}
+<style>
+    html,
+    body {
+        background-color: #131313;
+    }
+</style>
+{{ end }}
 {{ define "main" }}
 
-<div class="btn-back mt-3 ms-3">
-    <a href="javascript:history.back();"><button class="btn btn-top"><i class="fa-solid fa-arrow-left"></i></button></a>
-</div>
-
-<div class="container-fluid mt-auto">
-    <div class="container">
-        <div class="textdiv mb-3 p-4">
-            <div class="row justify-content-center">
-                <h2 class="text-center mb-5">Deine Nachricht wurde erfolgreich verschickt!</h2>
-            </div>
+<div class="container me-0 pe-0 d-flex align-items-center min-vh-100">
+    <div class="position-absolute collection-back">
+        <a href="javascript:history.back();"><button class="btn btn-back"><i
+                    class="fa-solid fa-arrow-left"></i></button></a>
+    </div>
+    <div class="row d-flex align-items-center">
+        <div class="position-absolute col div-collection">
+            <h1>Deine Nachricht wurde erfolgreich versendet!</h1>
         </div>
     </div>
 </div>
