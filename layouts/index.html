@@ -89,10 +89,12 @@
 <section class="background-dark p-6 navbar-trigger" data-gsap-color="#0b0b0b" id="uebermich">
     <div class="container d-inline">
         <div class="row justify-content-center position-relative pb-5 uebermich">
-            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 col-10" id="img-animation" style="opacity: 0; transform: translate(-200px, 0px);">
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 col-10" id="img-animation"
+                style="opacity: 0; transform: translate(-200px, 0px);">
                 <img src="/img/levyn-portrait.jpg" alt="Portrait of myself" class="img-fluid">
             </div>
-            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 col-10 p-4 d-block position-relative d-flex flex-column uebermich-text" id="ueber-animation" style="opacity: 0; transform: translate(200px, 0px);">
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 col-10 p-4 d-block position-relative d-flex flex-column uebermich-text"
+                id="ueber-animation" style="opacity: 0; transform: translate(200px, 0px);">
                 <p class="text-center mb-0 title-overhead">etwas</p>
                 <h1 class="text-center mb-3">Über mich</h1>
                 <p class="mt-2">Mein Name ist Levyn und ich lebe in der Schweiz. Ich habe meine Leidenschaft für
@@ -127,7 +129,8 @@
                 <img src="/img/fotografie/cape-may/cape-may.jpg" alt="Cape May" class="img-fluid img-left">
             </div>
             <div class="col-lg-6 text-center d-flex flex-column">
-                <p class="my-auto">Im Herbst 2016, während einer Reise in Afrika, durfte ich zum ersten Mal eine Kamera
+                <p class="my-auto py-3">Im Herbst 2016, während einer Reise in Afrika, durfte ich zum ersten Mal eine
+                    Kamera
                     brauchen, und ich liebte es, Bilder zu machen. Zu meinem 12. Geburtstag bekam ich meine erste eigene
                     Kamera (Canon 2000D). Ich habe nur 1 Jahr mit dieser Kamera fotografiert, aber sie genügte meinen
                     Standart schnell nicht mehr</p>
@@ -135,7 +138,8 @@
         </div>
         <div class="row mt-4 justify-content-center fotografie-grid fotografie-animation" style="opacity: 0;">
             <div class="col-lg-6 text-center d-flex flex-column">
-                <p class="my-auto">Zu meinem 13. Geburtstag bekam ich dann meine aktuelle Sony Alpha 7ii. Bis jetzt liebe
+                <p class="my-auto py-3">Zu meinem 13. Geburtstag bekam ich dann meine aktuelle Sony Alpha 7ii. Bis jetzt
+                    liebe
                     ich diese Kamera, und ich kann sie jedem empfehlen. Fotografieren ist neben Unihockey mein grösstes
                     Hobby.
                     <br><br>
@@ -150,7 +154,8 @@
     <div class="container pt-5">
         <div class="row">
             <h1 class="text-center mt-5 p-5 pb-0 fotografie-animation" style="opacity: 0;" id="galerie">Galerie</h1>
-            <p class="text-center mb-5 text-dark fotografie-animation" style="opacity: 0;">Gewisse Bilder kann man anklicken um mehr Informationen zu erhalten.
+            <p class="text-center mb-5 text-dark fotografie-animation" style="opacity: 0;">Gewisse Bilder kann man
+                anklicken um mehr Informationen zu erhalten.
             </p>
             <div class="grid mx-0 px-0 mb-5 fotografie-animation" style="opacity: 0;">
                 <div class="grid-sizer"></div>
@@ -244,7 +249,8 @@
 <section class="informatik background-dark py-5 navbar-trigger" data-gsap-color="#0b0b0b" id="informatik">
     <div class="container-fluid px-6 pt-5 mt-5">
         <div class="row">
-            <div class="col-lg-5 col-md-8" id="informatik-text-animation" style="opacity: 0; transform: translate(-200px, 0px);">
+            <div class="col-lg-5 col-md-8" id="informatik-text-animation"
+                style="opacity: 0; transform: translate(-200px, 0px);">
                 <h1 class="mt-0 mb-0">Informatik</h1>
 
                 <p class="mt-4">
@@ -261,7 +267,8 @@
                     Template entwickelt.</p>
                 <a href="#projekte"><button class="btn btn-main mt-4">Projekte</button></a>
             </div>
-            <div class="col-lg-7 mt-5 icon-container" id="informatik-icons-animation" style="opacity: 0; transform: translate(200px, 0px);">
+            <div class="col-lg-7 mt-5 icon-container" id="informatik-icons-animation"
+                style="opacity: 0; transform: translate(200px, 0px);">
                 <div class="row justify-content-evenly">
                     <div class="col-1 mt-4">
                         <img src="/img/icon/html-icon.png" alt="Web Icon" class="img-fluid">
@@ -397,19 +404,5 @@
     <p class="text-center text-muted py-4 mb-0 border-top">© 2022 by Levyn Schneider</p>
 </footer>
 
-
-{{ end }}
-
-{{ define "body_include" }}
-
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-<script>
-    $('.grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
-    })
-</script>
 
 {{ end }}
