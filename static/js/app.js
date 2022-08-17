@@ -56,3 +56,19 @@ function changeFunction(e) {
     changeText(pos)
     parent.classList.add("li-active");
 }
+
+// Masonry Grid
+function initMasonry() {
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+    })
+}
+
+let $grid = $('grid').imagesLoaded(function () {
+    console.log("run")
+    initMasonry();
+});
+
+$('window').resize(initMasonry());
