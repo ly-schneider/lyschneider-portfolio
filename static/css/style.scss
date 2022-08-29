@@ -177,6 +177,43 @@ a {
 }
 
 // Media Query
+@media (max-width: 550px) {
+    .image-section {
+        h1 {
+            font-size: 30px;
+        }
+        .mx-5 {
+            margin-left: 1rem!important;
+            margin-right: 1rem!important;
+        }
+    }
+
+    .navbar-brand {
+        margin-left: 1rem !important;
+        font-size: 30px;
+    }
+
+    .navbar-toggler {
+        margin-right: 1rem !important;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.5em !important;
+        height: 1.5em !important;
+    }
+}
+
+@media (max-width: 340px) {
+    .navbar-brand {
+        font-size: 26px;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.25em !important;
+        height: 1.25em !important;
+    }
+}
+
 @media (max-width: 992px) {
     .navbar-nav {
         text-align: center;
@@ -214,12 +251,13 @@ a {
 
 @media (min-width: 575px) {
     .uebermich {
-        left: -55px;
+        left: -150px;
+        height: auto;
     }
 
     .uebermich-text {
-        top: -40px;
-        left: 150px;
+        top: -290px;
+        left: 290px;
     }
 }
 
@@ -275,7 +313,7 @@ a {
 // Image Text
 .image-section {
     width: 100%;
-    min-height: calc(100vh - 71px);
+    min-height: 100vh;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -567,6 +605,7 @@ footer {
 }
 
 @media (max-width: 992px) {
+
     .grid-sizer,
     .grid-item {
         width: 25%;
