@@ -45,7 +45,7 @@ gsap.to("#ueber-animation", {
 })
 
 // Animation Array for the fotografie sector I decided to use a array and a foreach function because 
-// I does the same animation to every element so instead of repeating it I just made a forEach function
+// It does the same animation to every element so instead of repeating it I just made a forEach function
 gsap.utils.toArray(".fotografie-animation").forEach(function (elem) {
     ScrollTrigger.create({
         trigger: elem,
