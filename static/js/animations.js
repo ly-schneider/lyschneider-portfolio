@@ -32,7 +32,7 @@ gsap.to("#img-animation", {
     scrollTrigger: "#img-animation",
     x: 0,
     opacity: 1,
-    duration: 5,
+    duration: 2.5,
     ease: CustomEase.create("custom", "M0,0 C0.083,0.294 0.058,0.847 0.372,0.94 0.522,0.984 0.752,1 1,1 ")
 })
 
@@ -40,7 +40,7 @@ gsap.to("#ueber-animation", {
     scrollTrigger: "#ueber-animation",
     x: 0,
     opacity: 1,
-    duration: 5,
+    duration: 2.5,
     ease: CustomEase.create("custom", "M0,0 C0.083,0.294 0.058,0.847 0.372,0.94 0.522,0.984 0.752,1 1,1 ")
 })
 

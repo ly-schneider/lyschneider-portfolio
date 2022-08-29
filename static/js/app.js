@@ -58,17 +58,10 @@ function changeFunction(e) {
 }
 
 // Masonry Grid
-function initMasonry() {
-    $('.grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
-    })
-}
-
-let $grid = $('grid').imagesLoaded(function () {
-    console.log("run")
-    initMasonry();
+var $grid = $('.grid').imagesLoaded( function() {
+  $grid.masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
 });
-
-$('window').resize(initMasonry());
