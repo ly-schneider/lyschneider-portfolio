@@ -93,12 +93,20 @@ a {
     }
 }
 
+.background-grey {
+    background-color: #a6a6a6;
+
+    h1, p {
+        color: $font-color-dark;
+    }
+}
+
 .text-light {
     color: $font-color;
 }
 
 .text-dark {
-    color: $font-color-dark;
+    color: $font-color-dark!important;
 }
 
 .title-overhead {
@@ -124,7 +132,7 @@ a {
 // Buttons
 .btn-main {
     border: 2px solid $primary-color;
-    color: $font-color  !important;
+    color: $font-color;
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
     transition: 0.3s;
@@ -182,9 +190,10 @@ a {
         h1 {
             font-size: 30px;
         }
+
         .mx-5 {
-            margin-left: 1rem!important;
-            margin-right: 1rem!important;
+            margin-left: 1rem !important;
+            margin-right: 1rem !important;
         }
     }
 
@@ -425,7 +434,7 @@ form {
     }
 
     .btn-main {
-        color: $font-color-dark  !important;
+        color: $font-color-dark;
         font-family: $text-font;
         font-weight: 600;
         border: 3px solid $primary-color;

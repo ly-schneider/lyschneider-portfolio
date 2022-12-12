@@ -10,16 +10,17 @@ gsap.registerPlugin(CustomEase);
 // It gets the background-color for the navbar with the help of the getAttribute function where the hex code is stored
 gsap.utils.toArray(".navbar-trigger").forEach(function (elem) {
     let height = elem.offsetHeight;
-    let color = elem.getAttribute('data-gsap-color');
+    let background = elem.getAttribute('data-color-nav');
+    let font = elem.getAttribute('data-color-font');
 
     ScrollTrigger.create({
         trigger: elem,
         start: '-=1 top',
         end: '' + height + '-=1',
-        onEnter: () => gsap.to('.navbar', { duration: 0.3, backgroundColor: color }),
-        onLeave: () => gsap.to('.navbar', { duration: 0.3, backgroundColor: 'transparent' }),
-        onLeaveBack: () => gsap.to('.navbar', { duration: 0.3, backgroundColor: 'transparent' }),
-        onEnterBack: () => gsap.to('.navbar', { duration: 0.3, backgroundColor: color })
+        onEnter: () => gsap.to('.navbar', { duration: 0.3, backgroundColor: background }),
+        onLeave: () => gsap.to('.navbar', { duration: 0.3, backgroundColor: background }),
+        onLeaveBack: () => gsap.to('.navbar', { duration: 0.3, backgroundColor: background }),
+        onEnterBack: () => gsap.to('.navbar', { duration: 0.3, backgroundColor: background }),
     });
 
 });
