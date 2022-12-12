@@ -120,6 +120,7 @@ a:hover {
 }
 
 .btn-main:hover {
+  color: #ffffff;
   border-color: #fff;
 }
 

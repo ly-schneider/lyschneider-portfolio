@@ -139,6 +139,7 @@ a {
     font-family: $title-font;
 
     &:hover {
+        color: $font-color;
         border-color: #fff;
     }
 }
