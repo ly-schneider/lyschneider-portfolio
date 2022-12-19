@@ -76,7 +76,8 @@ a:hover {
   background-color: #a6a6a6;
 }
 
-.background-grey h1, .background-grey p {
+.background-grey h1,
+.background-grey p {
   color: #0b0b0b;
 }
 
@@ -163,6 +164,14 @@ a:hover {
 .navbar-toggler-icon {
   width: 2em !important;
   height: 2em !important;
+}
+
+#image-container a:not([aria-disabled="true"]) span:before {
+  content: "*";
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (max-width: 550px) {
@@ -405,6 +414,28 @@ form .btn-main {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   border: 3px solid #f5e0bf;
+}
+
+footer:not(.footer-light) {
+  background-color: #181818;
+}
+
+footer:not(.footer-light) .navbar-brand {
+  color: #999999;
+}
+
+footer:not(.footer-light) .navbar-brand:hover {
+  color: #c9c9c9;
+}
+
+footer:not(.footer-light) .btn-outline-light {
+  color: #999999;
+  border: 2px solid #999999 !important;
+}
+
+footer:not(.footer-light) .btn-outline-light:hover {
+  color: #000000;
+  border: 2px solid #000000 !important;
 }
 
 footer li a {

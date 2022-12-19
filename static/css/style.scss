@@ -96,7 +96,8 @@ a {
 .background-grey {
     background-color: #a6a6a6;
 
-    h1, p {
+    h1,
+    p {
         color: $font-color-dark;
     }
 }
@@ -106,7 +107,7 @@ a {
 }
 
 .text-dark {
-    color: $font-color-dark!important;
+    color: $font-color-dark !important;
 }
 
 .title-overhead {
@@ -183,6 +184,16 @@ a {
 .navbar-toggler-icon {
     width: 2em !important;
     height: 2em !important;
+}
+
+#image-container {
+    a:not([aria-disabled="true"]) span:before {
+        content: "*";
+        color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 // Media Query
@@ -444,6 +455,25 @@ form {
 
 // Footer
 footer {
+    &:not(.footer-light) {
+        background-color: #181818;
+        .navbar-brand {
+            color: #999999;
+    
+            &:hover {
+                color: #c9c9c9;
+            }
+        }
+        .btn-outline-light {
+            color: #999999;
+            border: 2px solid #999999 !important;
+            &:hover {
+                color:#000000;
+                border: 2px solid #000000 !important;
+            }
+        }
+    }
+
     li a {
         color: $font-color-dark;
         font-family: $text-font;

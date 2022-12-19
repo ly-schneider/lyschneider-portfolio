@@ -23,7 +23,9 @@ gsap.utils.toArray(".navbar-trigger").forEach(function (elem) {
         onEnterBack: () => gsap.to('.navbar', { duration: 0.3, backgroundColor: background }),
     });
 
+    ScrollTrigger.refresh();
 });
+
 
 // Animation for the Ueber Mich sector. It animates the x position and the duration with a custom ease
 // 1. Animation moves from left to right
