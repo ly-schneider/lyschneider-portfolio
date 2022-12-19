@@ -496,6 +496,12 @@ footer .btn-outline-light {
   border: 2px solid #0b0b0b !important;
 }
 
+footer .btn-outline-light:hover {
+  color: #ffffff;
+  border: 2px solid #0b0b0b !important;
+  background-color: #000000;
+}
+
 @media (min-width: 992px) {
   .ul-navbar {
     top: 35px;

@@ -528,6 +528,11 @@ footer {
     .btn-outline-light {
         color: #0b0b0b;
         border: 2px solid #0b0b0b !important;
+        &:hover {
+            color:#ffffff;
+            border: 2px solid #0b0b0b !important;
+            background-color: #000000;
+        }
     }
 }
 
