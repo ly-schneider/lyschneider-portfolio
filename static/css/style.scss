@@ -36,10 +36,10 @@ body {
     color: $text;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    padding-right: 5rem;
-    padding-left: 5rem;
-    transition: 0.5s;
+    font-size: calc(0.7rem + 1.5vw);
+    padding-right: calc(2rem + 5vw);
+    padding-left: calc(2rem + 5vw);
+    transition: 0.5s background-color;
 
     &:hover {
         background-color: $primary;
@@ -49,6 +49,14 @@ body {
     &:focus {
         background-color: $primary;
         color: $text;
+    }
+}
+
+@media (min-width: 815px) {
+    .btn {
+        font-size: 1.3rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
     }
 }
 
@@ -71,15 +79,25 @@ video {
 }
 
 .brand-name {
-    font-size: 46px;
     font-weight: 800;
     color: $text;
+    font-size: calc(1.525rem + 3.3vw);
 }
 
-.subtilte {
-    font-size: 24px;
+.subtitle {
     color: $secondary;
     font-weight: 500;
+    font-size: calc(0.7rem + 1.5vw);
+}
+
+@media (min-width: 815px) {
+    .brand-name {
+        font-size: 3.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
 }
 
 // ----- Über mich ----- //
@@ -108,10 +126,6 @@ video {
     background-color: $background;
     border: 3px solid $secondary;
     left: -50px;
-
-    .btn {
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 575px) {
@@ -175,10 +189,25 @@ video {
     p {
         font-weight: 500;
         font-size: 20px;
+
         &:nth-of-type(2) {
             color: $secondary;
             font-size: 16px;
         }
+    }
+
+    .btn {
+        font-size: calc(0.5rem + 1vw);
+        padding-right: calc(1rem + 4vw);
+        padding-left: calc(1rem + 4vw);
+    }
+}
+
+@media (min-width: 1280px) {
+    #film .btn {
+        font-size: 18px;
+        padding-right: 4rem;
+        padding-left: 4rem;
     }
 }
 
@@ -198,7 +227,9 @@ video {
 
     .mehr-button {
         position: absolute;
-        font-size: 16px;
+        font-size: calc(0.5rem + 1vw);
+        padding-right: calc(1rem + 4vw);
+        padding-left: calc(1rem + 4vw);
     }
 
     img {
@@ -213,6 +244,14 @@ video {
     p {
         font-weight: 500;
         font-size: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .mehr-button {
+        font-size: 18px;
+        padding-right: 4rem;
+        padding-left: 4rem;
     }
 }
 
@@ -370,10 +409,11 @@ footer {
     height: 40px;
     transition: 0.5s;
     color: #ffffff !important;
-    border: none!important;
+    border: none !important;
 
     &:hover {
         background-color: #ffffff;
+
         i {
             color: #010101;
         }
@@ -392,10 +432,12 @@ footer {
 }
 
 @media (max-width: 992px) {
+
     .grid-sizer,
     .grid-item {
         width: 25%;
     }
+
     .grid-item-2 {
         width: 50%;
     }

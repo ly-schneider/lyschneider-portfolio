@@ -22,11 +22,11 @@ body {
   color: #ffffff;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  padding-right: 5rem;
-  padding-left: 5rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  font-size: calc(0.7rem + 1.5vw);
+  padding-right: calc(2rem + 5vw);
+  padding-left: calc(2rem + 5vw);
+  -webkit-transition: 0.5s background-color;
+  transition: 0.5s background-color;
 }
 
 .btn:hover {
@@ -37,6 +37,14 @@ body {
 .btn:focus {
   background-color: #245865;
   color: #ffffff;
+}
+
+@media (min-width: 815px) {
+  .btn {
+    font-size: 1.3rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
 }
 
 a {
@@ -58,15 +66,24 @@ video {
 }
 
 .brand-name {
-  font-size: 46px;
   font-weight: 800;
   color: #ffffff;
+  font-size: calc(1.525rem + 3.3vw);
 }
 
-.subtilte {
-  font-size: 24px;
+.subtitle {
   color: #9BA39D;
   font-weight: 500;
+  font-size: calc(0.7rem + 1.5vw);
+}
+
+@media (min-width: 815px) {
+  .brand-name {
+    font-size: 3.5rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
 }
 
 .title-overhead {
@@ -94,10 +111,6 @@ video {
   background-color: #010101;
   border: 3px solid #9BA39D;
   left: -50px;
-}
-
-.uebermich-text .btn {
-  font-size: 16px;
 }
 
 @media (max-width: 575px) {
@@ -162,6 +175,20 @@ video {
   font-size: 16px;
 }
 
+#film .btn {
+  font-size: calc(0.5rem + 1vw);
+  padding-right: calc(1rem + 4vw);
+  padding-left: calc(1rem + 4vw);
+}
+
+@media (min-width: 1280px) {
+  #film .btn {
+    font-size: 18px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
 .divider {
   fill: white;
 }
@@ -177,7 +204,9 @@ video {
 
 #foto .mehr-button {
   position: absolute;
-  font-size: 16px;
+  font-size: calc(0.5rem + 1vw);
+  padding-right: calc(1rem + 4vw);
+  padding-left: calc(1rem + 4vw);
 }
 
 #foto img {
@@ -195,6 +224,14 @@ video {
 #foto p {
   font-weight: 500;
   font-size: 20px;
+}
+
+@media (min-width: 1280px) {
+  .mehr-button {
+    font-size: 18px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
 }
 
 form label {
