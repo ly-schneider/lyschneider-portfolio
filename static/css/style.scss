@@ -1,25 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// Unbounded Font
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+// Ubuntu
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-// Colors
-$background-dark: #0b0b0b;
-$background-light: #dadada;
-$background-light-1: #edecf1;
-$font-color: #ffffff;
-$font-color-dark: #0b0b0b;
-$primary-color: #f5e0bf;
-// Title
-$title-font: 'Ubuntu', sans-serif;
-$title-size: 40px;
-$title-size-sm: 28px;
-$title-weight: 600;
-$title-weight-sm: 500;
-// Text
-$text-font: 'Montserrat', sans-serif;
-$text-size: 16px;
-$text-weight: 400;
+// ----- Colors ----- //
+$background: #010101;
+$text: #ffffff;
+$primary: #245865;
+$secondary: #9BA39D;
 
-// General CSS
+// ----- Fonts ----- //
+$ubuntu: 'Ubuntu', sans-serif;
+$unbounded: 'Unbounded', cursive;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,233 +23,95 @@ html,
 body {
     text-decoration: none !important;
     overflow-x: hidden;
-    color: $font-color;
+    font-family: 'Unbounded', cursive;
+    background-color: $background;
+    color: $text;
 }
 
-// Definied
-h1 {
-    font-family: $title-font;
-    font-size: $title-size;
-    font-weight: $title-weight;
-    color: $font-color;
-}
+// ----- Button ----- //
 
-h3 {
-    font-family: $title-font;
-    font-size: $title-size-sm;
-    font-weight: $title-weight;
-    color: $font-color;
-}
-
-p {
-    font-family: $text-font;
-    font-size: $text-size;
-    font-weight: $text-weight;
-    color: $font-color;
-}
-
-a {
-    color: $primary-color;
+.btn {
+    border: 3px solid $primary;
+    border-radius: 15px;
+    color: $text;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    text-decoration: none !important;
+    font-size: 20px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    transition: 0.5s;
 
     &:hover {
-        color: #f3ede2;
+        background-color: $primary;
+        color: $text;
+    }
+
+    &:focus {
+        background-color: $primary;
+        color: $text;
     }
 }
 
-// Backgrounds
-.background-dark {
-    background-color: $background-dark;
+// ----- Link ----- //
+a {
+    color: $secondary;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 500;
 
-    h1,
-    p {
-        color: $font-color;
+    &:hover {
+        color: #dadada;
     }
 }
 
-.background-light {
-    background-color: $background-light;
-
-    h1,
-    p {
-        color: $font-color-dark;
-    }
+// ----- Landing Page ----- //
+.bg-video,
+video {
+    object-fit: cover;
 }
 
-.background-light-2 {
-    background-color: $background-light-1;
-
-    h1,
-    p {
-        color: $font-color-dark;
-    }
+.brand-name {
+    font-size: 46px;
+    font-weight: 800;
+    color: $text;
 }
 
-.background-grey {
-    background-color: #a6a6a6;
-
-    h1,
-    p {
-        color: $font-color-dark;
-    }
+.subtilte {
+    font-size: 24px;
+    color: $secondary;
+    font-weight: 500;
 }
 
-.text-light {
-    color: $font-color;
-}
-
-.text-dark {
-    color: $font-color-dark !important;
-}
-
+// ----- Über mich ----- //
 .title-overhead {
-    color: rgb(245, 224, 191) !important;
-    font-family: $title-font;
+    font-family: $ubuntu;
+    color: #5091A1;
     font-weight: 700;
-    font-size: 14px;
 }
 
-.flip {
-    transform: rotate(180deg);
+.ueber-bold {
+    font-weight: 600;
 }
 
-.p-6 {
-    padding: 5rem 3rem 5rem 3rem;
+.uebermich-text p:not(.title-overhead) {
+    font-family: $unbounded;
+    font-size: 16px;
+    font-weight: 300;
 }
 
-.px-6 {
-    padding-left: 8rem;
-    padding-right: 8rem;
-}
-
-// Buttons
-.btn-main {
-    border: 2px solid $primary-color;
-    color: $font-color;
-    padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important;
-    transition: 0.3s;
-    font-family: $title-font;
-
-    &:hover {
-        color: $font-color;
-        border-color: #fff;
-    }
-}
-
-.btn-back {
-    background-color: $primary-color;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    transition: 0.3s;
-    color: #0b0b0b !important;
-
-    &:hover {
-        background-color: #faf4e8;
-    }
-}
-
-// Navigation
-.nav-link {
-    font-family: $text-font;
-    font-weight: $text-weight;
-    color: white !important;
-    font-size: $text-size;
-
-    &:hover {
-        color: #dddddd !important;
-    }
-}
-
-.navbar-brand {
-    font-family: $title-font;
-    font-weight: $title-weight-sm;
-    color: $font-color;
-    font-size: $title-size;
-}
-
-.navbar-toggler {
-    border: none !important;
-}
-
-.navbar-toggler-icon {
-    width: 2em !important;
-    height: 2em !important;
-}
-
-#image-container {
-    a:not([aria-disabled="true"]) span:before {
-        content: "*";
-        color: red;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-}
-
-// Media Query
-@media (max-width: 550px) {
-    .image-section {
-        h1 {
-            font-size: 30px;
-        }
-
-        .mx-5 {
-            margin-left: 1rem !important;
-            margin-right: 1rem !important;
-        }
-    }
-
-    .navbar-brand {
-        margin-left: 1rem !important;
-        font-size: 30px;
-    }
-
-    .navbar-toggler {
-        margin-right: 1rem !important;
-    }
-
-    .navbar-toggler-icon {
-        width: 1.5em !important;
-        height: 1.5em !important;
-    }
-}
-
-@media (max-width: 340px) {
-    .navbar-brand {
-        font-size: 26px;
-    }
-
-    .navbar-toggler-icon {
-        width: 1.25em !important;
-        height: 1.25em !important;
-    }
-}
-
-@media (max-width: 992px) {
-    .navbar-nav {
-        text-align: center;
-        margin-top: 1.5rem !important;
-        margin-right: 0 !important;
-    }
-
-    .nav-item {
-        margin-top: 1rem !important;
-        margin-bottom: 1rem !important;
-    }
-}
-
-// Über mich
 .uebermich {
     left: 50px;
 }
 
 .uebermich-text {
     top: 50px;
-    background-color: #1c1c1c;
+    background-color: $background;
+    border: 3px solid $secondary;
     left: -50px;
+
+    .btn {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -304,200 +159,111 @@ a {
     }
 }
 
-// Fotografie
-.fotografie-grid {
-    background-color: #eeeeee;
-    box-shadow: 5px 0px 10px #cfcfcf;
-    border-radius: 5px;
-
-    .img-left {
-        border-radius: 5px 0px 0px 5px;
-    }
-
-    .img-right {
-        border-radius: 0px 5px 5px 0px;
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+    #intro {
+        margin-top: -58.59px;
     }
 }
 
-.galerie-grid-img {
-    img {
-        transition: 0.2s;
+// ----- Film ----- //
+#film {
+    h1.border-bottom {
+        border-bottom: 3px solid #ffffff !important;
     }
 
-    &:hover {
-        img {
-            filter: brightness(.6);
-        }
-    }
-}
-
-// Image Text
-.image-section {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-
-    .text-center {
-        border-bottom: 2px solid white;
-    }
-}
-
-// Informatik
-.informatik {
-    img {
-        width: 62px;
-        height: auto;
-    }
-}
-
-@media (max-width: 992px) {
-    .icon-container {
-        display: none;
-    }
-}
-
-@media (max-width: 575px) {
-    .informatik>div {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-
-    .projekte {
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
-    }
-}
-
-// Projekte
-.projekte {
-    li {
-        list-style: none;
-        border-left: 2px solid #999999;
-        font-size: 18px;
-        margin-left: 1px !important;
-        font-family: $text-font;
-        color: #999999;
-        transition: 0.3s;
-
-        a {
-            color: inherit;
-            text-decoration: none !important;
-            transition: 0.3s;
-
-            &:hover {
-                color: #ffffff;
-            }
-        }
-    }
-
-    .li-active {
-        border-left: 4px solid $primary-color;
-        margin-left: 0 !important;
-        margin-right: 1px !important;
-        color: $font-color;
-        transition: 0.3s;
-
-        a {
-            color: inherit;
-            text-decoration: none !important;
-            transition: 0.3s;
-
-            &:hover {
-                color: #d4d4d4;
-            }
-        }
-    }
-
-    .date {
-        font-size: 14px;
+    p {
         font-weight: 500;
+        font-size: 20px;
+        &:nth-of-type(2) {
+            color: $secondary;
+            font-size: 16px;
+        }
     }
 }
 
-// Carousel
-.carousel-item img {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
+// ----- Divider ----- //
+.divider {
+    fill: rgb(255, 255, 255);
 }
 
-// Kontakt Form
+// ----- Foto ----- //
+#foto {
+    background-color: #ffffff;
+    color: #010101;
+
+    h1.border-bottom {
+        border-bottom: 3px solid #010101 !important;
+    }
+
+    .mehr-button {
+        position: absolute;
+        font-size: 16px;
+    }
+
+    img {
+        filter: brightness(0.5);
+        transition: 0.6s;
+
+        &:hover {
+            filter: brightness(1);
+        }
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+// ----- Kontakt Formular ----- //
 form {
     label {
-        font-family: $text-font;
-        font-size: 14px;
-        font-weight: 600;
-        color: $font-color-dark;
+        font-size: 15px;
+        font-family: $ubuntu;
+        font-weight: 500;
     }
 
-    .form-group input,
-    .form-group textarea {
-        border: 1px solid rgb(0, 0, 0);
-        background-color: #ebebeb;
-        color: $font-color-dark;
-        font-family: $text-font;
-
-        &:focus {
-            background-color: #f4f4f4;
-            color: $font-color-dark;
-        }
-    }
-
-    .btn-main {
-        color: $font-color-dark;
-        font-family: $text-font;
-        font-weight: 600;
-        border: 3px solid $primary-color;
+    .btn {
+        font-size: 16px;
     }
 }
 
-// Footer
+.form-control {
+    background-color: $background;
+    color: $text;
+    border: 3px solid $primary;
+    border-radius: 15px !important;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    transition: 0.3s;
+
+    &:focus {
+        background-color: $background;
+        color: $text;
+        border: 3px solid white;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+// ----- Footer ----- //
 footer {
-    &:not(.footer-light) {
-        background-color: #181818;
-        .navbar-brand {
-            color: #999999;
-    
-            &:hover {
-                color: #c9c9c9;
-            }
-        }
-        .btn-outline-light {
-            color: #999999;
-            border: 2px solid #999999 !important;
-            &:hover {
-                color:#000000;
-                border: 2px solid #000000 !important;
-            }
-        }
-    }
-
-    li a {
-        color: $font-color-dark;
-        font-family: $text-font;
-        font-weight: $text-weight;
-        font-size: 14px;
-        transition: 0.3s;
-
-        &:hover {
-            color: #999999;
-        }
-    }
-
-    li {
-        position: relative;
-    }
-
-    .navbar-brand {
-        color: $font-color-dark;
+    .brand-name a {
         font-size: 30px;
-        transition: 0.3s;
+        font-weight: 800;
+        color: $text;
+        transition: 0.5s;
 
         &:hover {
-            color: #999999;
+            color: $secondary;
         }
+    }
+
+    p {
+        font-size: 14px;
     }
 
     .icons {
@@ -521,61 +287,19 @@ footer {
         }
     }
 
-    .text-muted {
-        color: #797979 !important;
-    }
-
     .btn-outline-light {
-        color: #0b0b0b;
-        border: 2px solid #0b0b0b !important;
+        color: #ffffff;
+        border: 2px solid #ffffff !important;
+
         &:hover {
-            color:#ffffff;
-            border: 2px solid #0b0b0b !important;
-            background-color: #000000;
+            color: #010101;
+            border: 2px solid #ffffff !important;
+            background-color: #ffffff;
         }
     }
 }
 
-@media (min-width: 992px) {
-    .ul-navbar {
-        top: 35px;
-        position: relative;
-    }
-}
-
-@media (max-width: 576px) {
-    footer {
-        .text-muted {
-            font-size: 12px;
-        }
-
-        .icons {
-            a {
-                width: 34px;
-                height: 34px;
-            }
-
-            i {
-                font-size: 16px;
-            }
-        }
-
-        .navbar-brand {
-            font-size: 24px;
-        }
-    }
-
-    .ul-navbar li {
-        padding-right: 0.2rem !important;
-        padding-left: 0.2rem !important;
-
-        a {
-            font-size: 12px;
-        }
-    }
-}
-
-// Fotografie Sub Pages
+// ----- Subpages ----- //
 .image-collection {
     margin-right: 0 !important;
     padding: 2rem 0rem 2rem 7rem;
@@ -591,8 +315,9 @@ footer {
 
     p {
         max-width: 35vw;
-        font-weight: 400;
-        font-size: $text-size;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: $ubuntu;
     }
 }
 
@@ -638,6 +363,23 @@ footer {
     text-orientation: upright;
 }
 
+.btn-back {
+    background-color: $primary;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+    color: #ffffff !important;
+    border: none!important;
+
+    &:hover {
+        background-color: #ffffff;
+        i {
+            color: #010101;
+        }
+    }
+}
+
 // Grid
 .grid-sizer,
 .grid-item {
@@ -650,12 +392,10 @@ footer {
 }
 
 @media (max-width: 992px) {
-
     .grid-sizer,
     .grid-item {
         width: 25%;
     }
-
     .grid-item-2 {
         width: 50%;
     }

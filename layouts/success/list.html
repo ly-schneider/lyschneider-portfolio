@@ -1,21 +1,14 @@
-{{ define "style" }}
-<style>
-    html,
-    body {
-        background-color: #131313;
-    }
-</style>
-{{ end }}
 {{ define "main" }}
 
-<div class="container me-0 pe-0 d-flex align-items-center min-vh-100">
-    <div class="position-absolute collection-back">
-        <a href="javascript:history.back();"><button class="btn btn-back"><i
-                    class="fa-solid fa-arrow-left"></i></button></a>
-    </div>
-    <div class="row d-flex align-items-center">
-        <div class="position-absolute col div-collection">
-            <h1>Deine Nachricht wurde erfolgreich versendet!</h1>
+<div class="container-fluid p-0 min-vh-100">
+    <div class="bg-video vh-100 position-relative d-flex align-items-center">
+        <video class="w-100 vh-100" src="/video/background-video.mp4" style="filter: blur(5px);" autoplay loop
+            muted></video>
+        <div
+            class="position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white pb-5 mb-5">
+            <h1 class="brand-name" style="font-size: 36px;">Deine nachricht wurde erfolgreich versendet!</h1>
+            <a href="javascript:history.back();"><button class="btn mt-3" style="font-size: 16px;"><i
+                class="fa-solid fa-arrow-left me-2"></i>Zurück</button></a>
         </div>
     </div>
 </div>

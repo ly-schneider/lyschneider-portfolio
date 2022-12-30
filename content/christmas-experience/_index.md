@@ -1,4 +1,4 @@
 +++
-title = "ICF Christmas Experience · Portfolio"
-description = "ICF Christmas Experience | lyschneider"
+title = "ICF Christmas Experience · lyschneider"
+description = "ICF Christmas Experience kollektion von Levyn Schneider."
 +++

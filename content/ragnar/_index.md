@@ -1,4 +1,4 @@
 +++
-title = "Ragnar · Portfolio"
-description = "Ragnar Hundefotografie | lyschneider"
+title = "Ragnar · lyschneider"
+description = "Ragnar Hundefotografie kollektion von Levyn Schneider."
 +++
