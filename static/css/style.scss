@@ -182,8 +182,8 @@ video {
 
 // ----- Film ----- //
 #film {
-    h1.border-bottom {
-        border-bottom: 3px solid #ffffff !important;
+    hr {
+        border-radius: 5px;
     }
 
     p {
@@ -221,8 +221,8 @@ video {
     background-color: #ffffff;
     color: #010101;
 
-    h1.border-bottom {
-        border-bottom: 3px solid #010101 !important;
+    hr {
+        border-radius: 5px;
     }
 
     .mehr-button {
@@ -441,4 +441,34 @@ footer {
     .grid-item-2 {
         width: 50%;
     }
+}
+
+// ----- Animations ----- //
+
+// Left Side Animation
+.left-side-animation {
+    transform: translate(-400px, 0px);
+    opacity: 0;
+}
+
+.right-side-animation {
+    transform: translate(400px, 0px);
+    opacity: 0;
+}
+
+#left-border-animation {
+    width: 0;
+    border-color: transparent;
+    border-width: 0px;
+}
+
+#right-border-animation {
+    float: right;
+    width: 0;
+    border-color: transparent;
+    border-width: 0px;
+}
+
+.reveal-animation {
+    opacity: 0;
 }

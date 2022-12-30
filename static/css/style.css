@@ -161,8 +161,8 @@ video {
   }
 }
 
-#film h1.border-bottom {
-  border-bottom: 3px solid #ffffff !important;
+#film hr {
+  border-radius: 5px;
 }
 
 #film p {
@@ -198,8 +198,8 @@ video {
   color: #010101;
 }
 
-#foto h1.border-bottom {
-  border-bottom: 3px solid #010101 !important;
+#foto hr {
+  border-radius: 5px;
 }
 
 #foto .mehr-button {
@@ -411,5 +411,34 @@ footer .btn-outline-light:hover {
   .grid-item-2 {
     width: 50%;
   }
+}
+
+.left-side-animation {
+  -webkit-transform: translate(-400px, 0px);
+          transform: translate(-400px, 0px);
+  opacity: 0;
+}
+
+.right-side-animation {
+  -webkit-transform: translate(400px, 0px);
+          transform: translate(400px, 0px);
+  opacity: 0;
+}
+
+#left-border-animation {
+  width: 0;
+  border-color: transparent;
+  border-width: 0px;
+}
+
+#right-border-animation {
+  float: right;
+  width: 0;
+  border-color: transparent;
+  border-width: 0px;
+}
+
+.reveal-animation {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

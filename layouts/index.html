@@ -2,7 +2,8 @@
 
 <div class="container-fluid p-0 min-vh-100">
     <div class="bg-video vh-100 position-relative d-flex align-items-center">
-        <video class="w-100 vh-100" src="/video/background-video.mp4" style="filter: blur(5px);" autoplay loop muted playsinline></video>
+        <video class="w-100 vh-100" src="/video/background-video.mp4" style="filter: blur(5px);" autoplay loop muted
+            playsinline></video>
         <div
             class="position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white pb-5 mb-5">
             <h1 class="brand-name">lyschneider</h1>
@@ -14,11 +15,12 @@
 
 <div class="container d-flex align-items-center min-vh-100" id="ueber-mich">
     <div class="row justify-content-center position-relative pb-5 uebermich">
-        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-7 col-10">
+        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-7 col-10" id="img-animation"
+            style="opacity: 0; transform: translate(-200px, 0px);">
             <img src="/img/levyn-portrait.jpg" alt="Portrait of myself" class="img-fluid">
         </div>
-        <div
-            class="col-xl-5 col-lg-5 col-md-6 col-sm-7 col-10 p-4 d-block position-relative d-flex flex-column uebermich-text">
+        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-7 col-10 p-4 d-block position-relative d-flex flex-column uebermich-text"
+            id="ueber-animation" style="opacity: 0; transform: translate(200px, 0px);">
             <p class="text-center mb-0 title-overhead">etwas</p>
             <h1 class="text-center mb-4">Über mich</h1>
             <p class="mt-3">Mein Name ist <span class="ueber-bold">Levyn</span> und ich lebe in der <span
@@ -38,19 +40,20 @@
 <div class="container-fluid px-5 mt-5 pt-5" id="film">
     <div class="row">
         <div class="col-6">
-            <h1 class="mb-5 border-bottom">FILM</h1>
-            <p class="mb-0">BlessThun - 27.11</p>
-            <p>Recap Video</p>
+            <h1 class="mb-0 left-side-animation">FILM</h1>
+            <hr class="mb-5" id="left-border-animation"></hr>
+            <p class="mb-0 left-side-animation">BlessThun - 27.11</p>
+            <p class="left-side-animation">Recap Video</p>
         </div>
-        <div class="ratio ratio-16x9 mt-3">
+        <div class="ratio ratio-16x9 mt-3 reveal-animation">
             <iframe src="https://www.youtube.com/embed/CrLZNkvqSo8?rel=0" title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        <div class="col-12">
+        <div class="col-12 left-side-animation">
             <h2 class="mt-5 mb-3">Willst du auch so ein Video?</h2>
         </div>
-        <div class="col-8">
+        <div class="col-8 reveal-animation">
             <a href="#kontakt" class="mt-auto"><button class="btn">Kontaktiere mich</button></a>
         </div>
     </div>
@@ -67,15 +70,16 @@
 <div class="container-fluid px-5 pt-5 pb-5" id="foto">
     <div class="row justify-content-end mb-5">
         <div class="col-6 text-end">
-            <h1 class="mb-5 border-bottom">FOTO</h1>
+            <h1 class="mb-0 right-side-animation">FOTO</h1>
+            <hr class="mb-5" id="right-border-animation"></hr>
         </div>
 
         <!-- ICF CE -->
         <div class="col-12 text-end">
-            <p class="mb-1">ICF Christmas</p>
-            <p>Experience - 2022</p>
+            <p class="mb-1 right-side-animation">ICF Christmas</p>
+            <p class="right-side-animation">Experience - 2022</p>
         </div>
-        <div class="position-relative">
+        <div class="position-relative reveal-animation">
             <a href="/christmas-experience/">
                 <img src="/img/gallery/icf-ce-1.jpg" class="img-fluid ratio ratio-16x9" alt="Image">
             </a>
@@ -85,10 +89,10 @@
         </div>
 
         <!-- ICF Bern -->
-        <div class="col-12 mt-5 pt-5">
+        <div class="col-12 mt-5 pt-5 left-side-animation">
             <p>ICF Bern</p>
         </div>
-        <div class="position-relative">
+        <div class="position-relative reveal-animation">
             <a href="/icf-bern/">
                 <img src="/img/gallery/icf-bern-2.jpg" class="img-fluid ratio ratio-16x9" alt="Image">
             </a>
@@ -99,10 +103,10 @@
 
         <!-- Ragnar -->
         <div class="col-12 mt-5 pt-5 text-end">
-            <p class="mb-1">Ragnar</p>
-            <p>Hundefotografie</p>
+            <p class="mb-1 right-side-animation">Ragnar</p>
+            <p class="right-side-animation">Hundefotografie</p>
         </div>
-        <div class="position-relative">
+        <div class="position-relative reveal-animation">
             <a href="/ragnar/">
                 <img src="/img/gallery/ragnar-new-2.jpg" class="img-fluid ratio ratio-16x9" alt="Image">
             </a>
@@ -121,18 +125,17 @@
     </svg>
 </div>
 
-<div class="container mb-5 pb-5" id="kontakt">
+<div class="container mb-5 pb-5 reveal-animation" id="kontakt">
     <h1 class="text-center mb-3">Kontakt</h1>
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-7 col-md-8 col-sm-10 mt-5">
             <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/success/"
-            netfliy class="row g-3 justify-content-center">
+                netfliy class="row g-3 justify-content-center">
                 <div class="row">
                     <div class="col-md-6">
                         <label class="mb-1">Vor- & Nachname</label>
                         <div class="input-group">
-                            <input name="name" type="text" class="form-control"
-                                autocomplete="name" required>
+                            <input name="name" type="text" class="form-control" autocomplete="name" required>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -144,7 +147,8 @@
                     <div class="col-md-12 mt-4">
                         <label class="mb-1">Nachricht</label>
                         <div class="input-group">
-                            <textarea rows="8" name="message" type="text" class="form-control" autocomplete="email" required></textarea>
+                            <textarea rows="8" name="message" type="text" class="form-control" autocomplete="email"
+                                required></textarea>
                         </div>
                     </div>
                     <div class="col-12 mt-4" data-netlify-recaptcha="true"></div>
