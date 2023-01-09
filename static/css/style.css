@@ -61,8 +61,8 @@ a:hover {
 
 .navbar {
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s background-color color;
+  transition: .5s background-color color;
 }
 
 .bg-dark {
