@@ -13,6 +13,7 @@ $secondary: #9BA39D;
 $ubuntu: 'Ubuntu', sans-serif;
 $unbounded: 'Unbounded', cursive;
 
+// ----- Main ----- //
 * {
     box-sizing: border-box;
     margin: 0;
@@ -280,6 +281,10 @@ video {
         font-weight: 500;
         font-size: 20px;
     }
+}
+
+.subtitle-foto p {
+    font-size: 24px!important;
 }
 
 @media (min-width: 1280px) {

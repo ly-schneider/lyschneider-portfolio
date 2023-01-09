@@ -261,6 +261,10 @@ video {
   font-size: 20px;
 }
 
+.subtitle-foto p {
+  font-size: 24px !important;
+}
+
 @media (min-width: 1280px) {
   .mehr-button {
     font-size: 18px;
