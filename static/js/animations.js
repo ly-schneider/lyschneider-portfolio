@@ -106,7 +106,6 @@ gsap.utils.toArray(".change-active").forEach(function (elem) {
     trigger: elem,
     start: 'top top',
     end: 'bottom top',
-    markers: true,
     onEnter: () => {
       document.getElementById(id).classList.add("active");
     },
@@ -127,7 +126,6 @@ ScrollTrigger.create({
   trigger: "#divider-1",
   start: 'top top',
   end: 'bottom top',
-  markers: true,
   onEnter: () => {
     document.getElementById("nav-film").classList.add("active");
   },
@@ -146,7 +144,6 @@ ScrollTrigger.create({
   trigger: "#divider-2",
   start: '2% top',
   end: '102% top',
-  markers: true,
   onEnter: () => {
     document.getElementById("nav-foto").classList.add("active");
   },
