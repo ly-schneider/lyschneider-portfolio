@@ -59,6 +59,38 @@ a:hover {
   color: #dadada;
 }
 
+.navbar {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.bg-dark {
+  background-color: #010101 !important;
+}
+
+.bg-dark .navbar-brand, .bg-dark i {
+  color: #ffffff !important;
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.bg-light .navbar-brand, .bg-light i {
+  color: #000000 !important;
+}
+
+.navbar-nav:not(.navbar-brand) {
+  font-family: "Unbounded", cursive;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.fa-circle {
+  font-size: 8px;
+}
+
 .bg-video,
 video {
   -o-object-fit: cover;

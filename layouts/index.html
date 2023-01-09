@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<div class="container-fluid p-0 min-vh-100">
+<div class="container-fluid p-0 min-vh-100" id="top">
     <div class="bg-video vh-100 position-relative d-flex align-items-center">
         <video class="w-100 vh-100" src="/video/background-video.mp4" style="filter: blur(5px);" autoplay loop muted
             playsinline></video>
@@ -13,7 +13,7 @@
     </div>
 </div>
 
-<div class="container d-flex align-items-center min-vh-100" id="ueber-mich">
+<div class="container d-flex align-items-center min-vh-100 change-active" id="ueber-mich" gsapNavId="nav-ueber-mich">
     <div class="row justify-content-center position-relative pb-5 uebermich">
         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-7 col-10" id="img-animation"
             style="opacity: 0; transform: translate(-200px, 0px);">
@@ -37,8 +37,8 @@
     </div>
 </div>
 
-<div class="container-fluid px-5 mt-5 pt-5" id="film">
-    <div class="row">
+<div class="container-fluid px-5 pt-5 change-active" id="film" gsapNavId="nav-film">
+    <div class="row mt-5">
         <div class="col-6">
             <h1 class="mb-0 left-side-animation">FILM</h1>
             <hr class="mb-5" id="left-border-animation"></hr>
@@ -59,7 +59,7 @@
     </div>
 </div>
 
-<div class="divider row">
+<div class="divider row" id="divider-1">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
             d="M0,256L60,224C120,192,240,128,360,133.3C480,139,600,213,720,234.7C840,256,960,224,1080,192C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
@@ -67,8 +67,8 @@
     </svg>
 </div>
 
-<div class="container-fluid px-5 pt-5 pb-5" id="foto">
-    <div class="row justify-content-end mb-5">
+<div class="container-fluid px-5 pt-5 pb-5 change-active" id="foto" gsapNavId="nav-foto">
+    <div class="row justify-content-end mb-5 mt-5">
         <div class="col-6 text-end">
             <h1 class="mb-0 right-side-animation">FOTO</h1>
             <hr class="mb-5" id="right-border-animation"></hr>
@@ -117,7 +117,7 @@
     </div>
 </div>
 
-<div class="divider row" style="transform: translateY(-5px) rotate(180deg);">
+<div class="divider row" id="divider-2" style="transform: translateY(-5px) rotate(180deg);">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
             d="M0,256L60,224C120,192,240,128,360,133.3C480,139,600,213,720,234.7C840,256,960,224,1080,192C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
@@ -125,8 +125,8 @@
     </svg>
 </div>
 
-<div class="container py-5 mb-5 reveal-animation" id="kontakt">
-    <h1 class="text-center mb-3">Kontakt</h1>
+<div class="container py-5 mb-5 reveal-animation change-active" id="kontakt" gsapNavId="nav-kontakt">
+    <h1 class="text-center mb-3 mt-5">Kontakt</h1>
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-7 col-md-8 col-sm-10 mt-5">
             <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/success/"

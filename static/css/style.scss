@@ -72,6 +72,36 @@ a {
     }
 }
 
+// ----- Navigation ----- //
+.navbar {
+    opacity: 0;
+    transition: 1s;
+}
+
+.bg-dark {
+    background-color: #010101!important;
+    .navbar-brand, i {
+        color: #ffffff!important;
+    }
+}
+
+.bg-light {
+    background-color: #ffffff!important;
+    .navbar-brand, i {
+        color: #000000!important;
+    }
+}
+
+.navbar-nav:not(.navbar-brand) {
+    font-family: $unbounded;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.fa-circle {
+    font-size: 8px;
+}
+
 // ----- Landing Page ----- //
 .bg-video,
 video {
