@@ -224,7 +224,7 @@ video {
 
     p {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 24px;
 
         &:nth-of-type(2) {
             color: $secondary;
@@ -279,12 +279,8 @@ video {
 
     p {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 24px;
     }
-}
-
-.subtitle-foto p {
-    font-size: 24px!important;
 }
 
 @media (min-width: 1280px) {

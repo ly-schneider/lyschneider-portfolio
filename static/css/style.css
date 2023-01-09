@@ -202,7 +202,7 @@ video {
 
 #film p {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 #film p:nth-of-type(2) {
@@ -258,11 +258,7 @@ video {
 
 #foto p {
   font-weight: 500;
-  font-size: 20px;
-}
-
-.subtitle-foto p {
-  font-size: 24px !important;
+  font-size: 24px;
 }
 
 @media (min-width: 1280px) {
