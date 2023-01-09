@@ -1,4 +1,4 @@
 +++
-title = "ICF Bern · lyschneider"
+title = "ICF Bern"
 description = "ICF Bern Konzert Fotografie von Levyn Schneider."
 +++

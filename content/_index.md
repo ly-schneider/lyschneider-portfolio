@@ -1,3 +1,3 @@
 +++
-title = "lyschneider · Film & Foto"
+title = "Levyn Schneider"
 +++
