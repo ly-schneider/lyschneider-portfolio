@@ -66,7 +66,7 @@ a {
     transition: 0.3s;
     text-decoration: none;
     font-weight: 500;
-
+ 
     &:hover {
         color: #dadada;
     }
@@ -74,21 +74,26 @@ a {
 
 // ----- Navigation ----- //
 .navbar {
+    display: none;
     opacity: 0;
     transition: .5s background-color, color;
 }
 
 .bg-dark {
-    background-color: #010101!important;
-    .navbar-brand, i {
-        color: #ffffff!important;
+    background-color: #010101 !important;
+
+    .navbar-brand,
+    i {
+        color: #ffffff !important;
     }
 }
 
 .bg-light {
-    background-color: #ffffff!important;
-    .navbar-brand, i {
-        color: #000000!important;
+    background-color: #ffffff !important;
+
+    .navbar-brand,
+    i {
+        color: #000000 !important;
     }
 }
 
@@ -433,21 +438,31 @@ footer {
 }
 
 .btn-back {
-    background-color: $primary;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    transition: 0.5s;
+    transition: 0.3s;
     color: #ffffff !important;
-    border: none !important;
+    border: none;
 
     &:hover {
         background-color: #ffffff;
-
         i {
-            color: #010101;
+            color: #000000;
         }
     }
+}
+
+.btn-b-color-1 {
+    background-color: #2F6879;
+}
+
+.btn-b-color-2 {
+    background-color: #A89690;
+}
+
+.btn-b-color-3 {
+    background-color: #9E9912;
 }
 
 // Grid

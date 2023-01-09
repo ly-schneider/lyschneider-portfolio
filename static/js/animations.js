@@ -62,10 +62,10 @@ ScrollTrigger.create({
   trigger: "#top",
   start: 'top 10%',
   end: '90% top',
-  onEnter: () => gsap.to(".navbar", { opacity: 0, ease: "power1.out" }),
-  onEnterBack: () => gsap.to(".navbar", { opacity: 0, ease: "power1.out" }),
-  onLeave: () => gsap.to(".navbar", { opacity: 1, ease: "power1.out" }),
-  onLeaveBack: () => gsap.to(".navbar", { opacity: 1, ease: "power1.out" }),
+  onEnter: () => gsap.to(".navbar", { opacity: 0, display: 'none', autoAlpha: 0, ease: "power1.out" }),
+  onEnterBack: () => gsap.to(".navbar", { opacity: 0, display: 'none', autoAlpha: 0, ease: "power1.out" }),
+  onLeave: () => gsap.to(".navbar", { opacity: 1, display: 'block', autoAlpha: 1, ease: "power1.out" }),
+  onLeaveBack: () => gsap.to(".navbar", { opacity: 1, display: 'block', autoAlpha: 1, ease: "power1.out" }),
 });
 
 ScrollTrigger.create({

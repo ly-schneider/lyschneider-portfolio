@@ -1,5 +1,27 @@
 {{ define "main" }}
 
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark py-3">
+    <div class="container-fluid">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <div class="navbar-nav align-items-center d-flex">
+                <a class="nav-link mx-3 navbar-brand" href="#top">lyschneider</a>
+                <i class="fa-solid fa-circle nav-link mx-3 align-self-center d-flex"></i>
+                <a class="nav-link mx-3" id="nav-ueber-mich" href="#ueber-mich">Über mich</a>
+                <a class="nav-link mx-3" id="nav-film" href="#film">Film</a>
+                <a class="nav-link mx-3" id="nav-foto" href="#foto">Foto</a>
+                <a class="nav-link mx-3" id="nav-kontakt" href="#kontakt">Kontakt</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Landing Page -->
 <div class="container-fluid p-0 min-vh-100" id="top">
     <div class="bg-video vh-100 position-relative d-flex align-items-center">
         <video class="w-100 vh-100" src="/video/background-video.mp4" style="filter: blur(5px);" autoplay loop muted
@@ -13,6 +35,7 @@
     </div>
 </div>
 
+<!-- Ueber mich -->
 <div class="container d-flex align-items-center min-vh-100 change-active" id="ueber-mich" gsapNavId="nav-ueber-mich">
     <div class="row justify-content-center position-relative pb-5 uebermich">
         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-7 col-10" id="img-animation"
@@ -37,11 +60,13 @@
     </div>
 </div>
 
+<!-- FILM Catergory -->
 <div class="container-fluid px-3 px-sm-5 pt-5 change-active" id="film" gsapNavId="nav-film">
     <div class="row mt-5">
         <div class="col-6">
             <h1 class="mb-0 left-side-animation">FILM</h1>
-            <hr class="mb-5" id="left-border-animation"></hr>
+            <hr class="mb-5" id="left-border-animation">
+            </hr>
             <p class="mb-0 left-side-animation">BlessThun - 27.11</p>
             <p class="left-side-animation">Recap Video</p>
         </div>
@@ -59,6 +84,7 @@
     </div>
 </div>
 
+<!-- Divider -->
 <div class="divider row" id="divider-1">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -67,11 +93,13 @@
     </svg>
 </div>
 
+<!-- FOTO Category -->
 <div class="container-fluid px-3 px-sm-5 pt-5 pb-5 change-active" id="foto" gsapNavId="nav-foto">
     <div class="row justify-content-end mb-5 mt-5">
         <div class="col-6 text-end">
             <h1 class="mb-0 right-side-animation">FOTO</h1>
-            <hr class="mb-5" id="right-border-animation"></hr>
+            <hr class="mb-5" id="right-border-animation">
+            </hr>
         </div>
 
         <!-- ICF CE -->
@@ -117,6 +145,7 @@
     </div>
 </div>
 
+<!-- Divider -->
 <div class="divider row" id="divider-2" style="transform: translateY(-5px) rotate(180deg);">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -125,6 +154,7 @@
     </svg>
 </div>
 
+<!-- Kontakt -->
 <div class="container py-5 mb-5 reveal-animation change-active" id="kontakt" gsapNavId="nav-kontakt">
     <h1 class="text-center mb-3 mt-5">Kontakt</h1>
     <div class="row justify-content-center">
