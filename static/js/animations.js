@@ -107,15 +107,27 @@ gsap.utils.toArray(".change-active").forEach(function (elem) {
     start: 'top top',
     end: 'bottom top',
     onEnter: () => {
+      document.querySelectorAll(".nav-link").forEach(function (navLinks) {
+        navLinks.classList.remove("active");
+      });
       document.getElementById(id).classList.add("active");
     },
     onEnterBack: () => {
+      document.querySelectorAll(".nav-link").forEach(function (navLinks) {
+        navLinks.classList.remove("active");
+      });
       document.getElementById(id).classList.add("active");
     },
     onLeave: () => {
+      document.querySelectorAll(".nav-link").forEach(function (navLinks) {
+        navLinks.classList.remove("active");
+      });
       document.getElementById(id).classList.remove("active");
     },
     onLeaveBack: () => {
+      document.querySelectorAll(".nav-link").forEach(function (navLinks) {
+        navLinks.classList.remove("active");
+      });
       document.getElementById(id).classList.remove("active");
     },
   });
