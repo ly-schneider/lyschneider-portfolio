@@ -154,8 +154,9 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: "#divider-2",
-  start: '2% top',
-  end: '102% top',
+  start: 'top top',
+  end: 'bottom top',
+  markers: true,
   onEnter: () => {
     document.getElementById("nav-foto").classList.add("active");
   },
@@ -163,10 +164,10 @@ ScrollTrigger.create({
     document.getElementById("nav-foto").classList.add("active");
   },
   onLeave: () => {
-    document.getElementById("nav-foto").classList.remove("active");
+    document.getElementById("nav-foto").classList.add("active");
   },
   onLeaveBack: () => {
-    document.getElementById("nav-foto").classList.remove("active");
+    document.getElementById("nav-foto").classList.add("active");
   },
 });
 
