@@ -8,7 +8,6 @@ if (window.outerWidth > 767) {
     start: "center center",
     end: "+=150",
     pin: "#ueber-mich",
-    markers: true
   })
 }
 
