@@ -484,7 +484,7 @@ footer .btn-outline-light:hover {
   border-width: 0px;
 }
 
-.reveal-animation {
+.reveal-animation, #kontakt {
   opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
