@@ -15,7 +15,6 @@ if (window.outerWidth > 767) {
 ScrollTrigger.create({
   trigger: "#ueber-mich",
   start: 'top 20%',
-  markers: true,
   onEnter: () => gsap.to("#img-animation", {
     x: 0,
     opacity: 1,
@@ -27,7 +26,6 @@ ScrollTrigger.create({
 ScrollTrigger.create({
   trigger: "#ueber-mich",
   start: 'top 20%',
-  markers: true,
   onEnter: () => gsap.to("#ueber-animation", {
     x: 0,
     opacity: 1,
