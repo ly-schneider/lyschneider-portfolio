@@ -127,7 +127,6 @@ ScrollTrigger.create({
 // Change Active Class
 gsap.utils.toArray(".change-active").forEach(function (elem) {
   const id = elem.getAttribute('gsapNavId');
-  console.log(id);
   ScrollTrigger.create({
     trigger: elem,
     start: 'top top',
