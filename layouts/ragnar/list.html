@@ -8,7 +8,8 @@
     <div class="row d-flex align-items-center">
         <div class="position-absolute col div-collection">
             <h1>Ragnar</h1>
-            <p>Das erste mal wo ich Hundefotografie ausprobiert habe. Die Bilder sind im Endeffekt ziemlich gut geworden.</p>
+            <p>Das erste mal wo ich Hundefotografie ausprobiert habe. Die Bilder sind im Endeffekt ziemlich gut
+                geworden.</p>
         </div>
         <div class="col col-collection">
             <img src="/img/subpages/ragnar/ragnar-2.jpg" class="d-block w-100 image-collection" alt="Bike 2">
@@ -19,14 +20,48 @@
     </div>
 </div>
 <div class="container-fluid mx-0 px-0 mt-5 mb-5 pb-5">
-    <div class="grid">
+    <div class="pswp-gallery grid" id="galerie">
         <div class="grid-sizer"></div>
-        <img src="/img/subpages/ragnar/ragnar-1.jpg" alt="Bike 1" class="grid-item">
-        <img src="/img/subpages/ragnar/ragnar-6.jpg" alt="Bike 1" class="grid-item grid-item-2">
-        <img src="/img/subpages/ragnar/ragnar-3.jpg" alt="Bike 1" class="grid-item">
-        <img src="/img/subpages/ragnar/ragnar-4.jpg" alt="Bike 1" class="grid-item">
-        <img src="/img/subpages/ragnar/ragnar-5.jpg" alt="Bike 1" class="grid-item">
+        <a href="/img/subpages/ragnar/ragnar-1.jpg" data-pswp-width="" data-pswp-height="" target="_blank"><img
+                src="/img/subpages/ragnar/ragnar-1.jpg" alt="Ragnar 1" class="grid-item"></a>
+        <a href="/img/subpages/ragnar/ragnar-6.jpg" data-pswp-width="" data-pswp-height="" target="_blank"><img
+                src="/img/subpages/ragnar/ragnar-6.jpg" alt="Ragnar 6" class="grid-item grid-item-2"></a>
+        <a href="/img/subpages/ragnar/ragnar-3.jpg" data-pswp-width="" data-pswp-height="" target="_blank"><img
+                src="/img/subpages/ragnar/ragnar-3.jpg" alt="Ragnar 3" class="grid-item"></a>
+        <a href="/img/subpages/ragnar/ragnar-4.jpg" data-pswp-width="" data-pswp-height="" target="_blank"><img
+                src="/img/subpages/ragnar/ragnar-4.jpg" alt="Ragnar 4" class="grid-item"></a>
+        <a href="/img/subpages/ragnar/ragnar-5.jpg" data-pswp-width="" data-pswp-height="" target="_blank"><img
+                src="/img/subpages/ragnar/ragnar-5.jpg" alt="Ragnar 5" class="grid-item"></a>
     </div>
 </div>
+
+<script type="module">
+    import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#galerie',
+        children: 'a',
+        pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
+    });
+
+    async function initLightbox() {
+        const galerie = document.getElementById("galerie");
+        const children = await galerie.querySelectorAll("a").forEach(async function (elem) {
+            const img = new Image();
+            let imgWidth;
+            let imgHeight;
+            img.onload = async function () {
+                imgWidth = this.width;
+                imgHeight = this.height;
+                elem.setAttribute("data-pswp-width", imgWidth);
+                elem.setAttribute("data-pswp-height", imgHeight);
+            }
+            img.src = elem.firstChild.src;
+        });
+        lightbox.init();
+    }
+
+    initLightbox();
+
+</script>
 
 {{ end }}
