@@ -2,15 +2,6 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(CustomEase);
 
 // Über mich animation
-if (window.outerWidth > 767) {
-  ScrollTrigger.create({
-    trigger: "#ueber-mich",
-    start: "center center",
-    end: "+=150",
-    pin: "#ueber-mich",
-  })
-}
-
 ScrollTrigger.create({
   trigger: "#ueber-mich",
   start: 'top 20%',
@@ -72,7 +63,6 @@ gsap.utils.toArray(".reveal-animation").forEach(function (elem) {
     onEnter: () => gsap.to(elem, { duration: 3, opacity: 1, ease: "power3.out" }),
   });
 });
-
 
 // Kontakt Animation
 ScrollTrigger.create({
@@ -173,7 +163,7 @@ ScrollTrigger.create({
     document.getElementById("nav-film").classList.remove("active");
   },
   onLeaveBack: () => {
-    document.getElementById("nav-film").classList.remove("active");
+    document.getElementById("nav-film").classList.add("active");
   },
 });
 
@@ -182,16 +172,28 @@ ScrollTrigger.create({
   start: 'top top',
   end: 'bottom top',
   onEnter: () => {
-    document.getElementById("nav-foto").classList.add("active");
+    setTimeout(()=>{
+      document.getElementById("nav-foto").classList.add("active");
+    }, 300)
+    console.log("onEnter");
   },
   onEnterBack: () => {
-    document.getElementById("nav-foto").classList.add("active");
+    setTimeout(()=>{
+      document.getElementById("nav-foto").classList.add("active");
+    }, 300)
+    console.log("onEnterBack");
   },
   onLeave: () => {
-    document.getElementById("nav-foto").classList.remove("active");
+    setTimeout(()=>{
+      document.getElementById("nav-foto").classList.remove("active");
+    }, 300)
+    console.log("onLeave");
   },
   onLeaveBack: () => {
-    document.getElementById("nav-foto").classList.remove("active");
+    setTimeout(()=>{
+      document.getElementById("nav-foto").classList.remove("active");
+    }, 300)
+    console.log("onLeaveBack");
   },
 });
 

@@ -20,19 +20,30 @@ $unbounded: 'Unbounded', cursive;
     padding: 0;
 }
 
-html,
-body {
+html, body {
     text-decoration: none !important;
-    overflow-x: hidden;
-    font-family: sans-serif;
+    font-family: $unbounded;
     background-color: $background;
     color: $text;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section.snap {
+    scroll-snap-align: start;
 }
 
 // ----- Button ----- //
 
 .btn {
-    border: 3px solid $primary;
+    border: none;
+    background-color: #666666be;
+    box-shadow: 0px 0px 10px 0px #666666;
     border-radius: 15px;
     color: $text;
     font-family: 'Ubuntu', sans-serif;
@@ -40,16 +51,51 @@ body {
     font-size: calc(0.7rem + 1.5vw);
     padding-right: calc(2rem + 5vw);
     padding-left: calc(2rem + 5vw);
-    transition: 0.5s background-color;
+    transition: 0.5s;
 
     &:hover {
         background-color: $primary;
+        box-shadow: 0px 0px 10px 0px $primary;
         color: $text;
     }
 
     &:focus {
         background-color: $primary;
+        box-shadow: 0px 0px 10px 0px $primary;
         color: $text;
+    }
+}
+
+.btn-color-1 {
+    border-color: #2F6879;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+        background-color: #2F6879;
+        box-shadow: 0px 0px 10px 0px #2F6879;
+    }
+}
+
+.btn-color-2 {
+    border-color: #B0B0B0;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+        background-color: #B0B0B0;
+        box-shadow: 0px 0px 10px 0px #B0B0B0;
+    }
+}
+
+.btn-color-3 {
+    border-color: #9E9912;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+        background-color: #9E9912;
+        box-shadow: 0px 0px 10px 0px #9E9912;
     }
 }
 
@@ -67,7 +113,7 @@ a {
     transition: 0.3s;
     text-decoration: none;
     font-weight: 500;
- 
+
     &:hover {
         color: #dadada;
     }
@@ -144,13 +190,13 @@ video {
 }
 
 .ueber-bold {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .uebermich-text p:not(.title-overhead) {
-    font-family: $unbounded;
-    font-size: 16px;
-    font-weight: 300;
+    font-family: $ubuntu;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .uebermich {
@@ -209,13 +255,6 @@ video {
     }
 }
 
-/* Height for devices larger than 576px */
-@media (min-width: 992px) {
-    #intro {
-        margin-top: -58.59px;
-    }
-}
-
 // ----- Film ----- //
 #film {
     hr {
@@ -254,9 +293,6 @@ video {
 
 // ----- Foto ----- //
 #foto {
-    background-color: #ffffff;
-    color: #010101;
-
     hr {
         border-radius: 5px;
     }
@@ -448,6 +484,7 @@ footer {
 
     &:hover {
         background-color: #ffffff;
+
         i {
             color: #000000;
         }
@@ -515,6 +552,7 @@ footer {
     border-width: 0px;
 }
 
-.reveal-animation, #kontakt {
+.reveal-animation,
+#kontakt {
     opacity: 0;
 }

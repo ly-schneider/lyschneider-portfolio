@@ -1,42 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html,
-body {
+html, body {
   text-decoration: none !important;
-  overflow-x: hidden;
-  font-family: 'Unbounded', cursive;
+  font-family: "Unbounded", cursive;
   background-color: #010101;
   color: #ffffff;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section.snap {
+  scroll-snap-align: start;
 }
 
 .btn {
-  border: 3px solid #245865;
+  border: none;
+  background-color: #666666be;
+  box-shadow: 0px 0px 10px 0px #666666;
   border-radius: 15px;
   color: #ffffff;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: calc(0.7rem + 1.5vw);
   padding-right: calc(2rem + 5vw);
   padding-left: calc(2rem + 5vw);
-  -webkit-transition: 0.5s background-color;
-  transition: 0.5s background-color;
+  transition: 0.5s;
 }
-
 .btn:hover {
   background-color: #245865;
+  box-shadow: 0px 0px 10px 0px #245865;
+  color: #ffffff;
+}
+.btn:focus {
+  background-color: #245865;
+  box-shadow: 0px 0px 10px 0px #245865;
   color: #ffffff;
 }
 
-.btn:focus {
-  background-color: #245865;
-  color: #ffffff;
+.btn-color-1 {
+  border-color: #2F6879;
+  transition: 0.5s;
+}
+.btn-color-1:hover, .btn-color-1:focus {
+  background-color: #2F6879;
+  box-shadow: 0px 0px 10px 0px #2F6879;
+}
+
+.btn-color-2 {
+  border-color: #B0B0B0;
+  transition: 0.5s;
+}
+.btn-color-2:hover, .btn-color-2:focus {
+  background-color: #B0B0B0;
+  box-shadow: 0px 0px 10px 0px #B0B0B0;
+}
+
+.btn-color-3 {
+  border-color: #9E9912;
+  transition: 0.5s;
+}
+.btn-color-3:hover, .btn-color-3:focus {
+  background-color: #9E9912;
+  box-shadow: 0px 0px 10px 0px #9E9912;
 }
 
 @media (min-width: 815px) {
@@ -46,15 +82,12 @@ body {
     padding-left: 5rem;
   }
 }
-
 a {
   color: #9BA39D;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   text-decoration: none;
   font-weight: 500;
 }
-
 a:hover {
   color: #dadada;
 }
@@ -62,14 +95,12 @@ a:hover {
 .navbar {
   display: none;
   opacity: 0;
-  -webkit-transition: .5s background-color, color;
-  transition: .5s background-color, color;
+  transition: 0.5s background-color, color;
 }
 
 .bg-dark {
   background-color: #010101 !important;
 }
-
 .bg-dark .navbar-brand,
 .bg-dark i {
   color: #ffffff !important;
@@ -78,7 +109,6 @@ a:hover {
 .bg-light {
   background-color: #ffffff !important;
 }
-
 .bg-light .navbar-brand,
 .bg-light i {
   color: #000000 !important;
@@ -96,8 +126,7 @@ a:hover {
 
 .bg-video,
 video {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .brand-name {
@@ -116,11 +145,11 @@ video {
   .brand-name {
     font-size: 3.5rem;
   }
+
   .subtitle {
     font-size: 1.3rem;
   }
 }
-
 .title-overhead {
   font-family: "Ubuntu", sans-serif;
   color: #5091A1;
@@ -128,13 +157,13 @@ video {
 }
 
 .ueber-bold {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .uebermich-text p:not(.title-overhead) {
-  font-family: "Unbounded", cursive;
-  font-size: 16px;
-  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .uebermich {
@@ -152,64 +181,54 @@ video {
   .uebermich {
     left: -55px;
   }
+
   .uebermich-text {
     top: -40px;
     left: 100px;
   }
 }
-
 @media (min-width: 575px) {
   .uebermich {
     left: -150px;
     height: auto;
   }
+
   .uebermich-text {
     top: -290px;
     left: 290px;
   }
 }
-
 @media (min-width: 768px) {
   .uebermich {
     left: 50px;
   }
+
   .uebermich-text {
     top: 50px;
     left: -50px;
   }
 }
-
 @media (min-width: 992px) {
   .uebermich {
     left: 50px;
   }
+
   .uebermich-text {
     top: 50px;
     left: -50px;
   }
 }
-
-/* Height for devices larger than 576px */
-@media (min-width: 992px) {
-  #intro {
-    margin-top: -58.59px;
-  }
-}
-
 #film hr {
   border-radius: 5px;
 }
-
 #film p {
   font-weight: 500;
   font-size: 24px;
 }
-
 #film p:nth-of-type(2) {
   color: #9BA39D;
   font-size: 16px;
 }
-
 #film .btn {
   font-size: calc(0.5rem + 1vw);
   padding-right: calc(1rem + 4vw);
@@ -223,39 +242,26 @@ video {
     padding-left: 4rem;
   }
 }
-
 .divider {
   fill: white;
-}
-
-#foto {
-  background-color: #ffffff;
-  color: #010101;
 }
 
 #foto hr {
   border-radius: 5px;
 }
-
 #foto .mehr-button {
   position: absolute;
   font-size: calc(0.5rem + 1vw);
   padding-right: calc(1rem + 4vw);
   padding-left: calc(1rem + 4vw);
 }
-
 #foto img {
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
-  -webkit-transition: 0.6s;
+  filter: brightness(0.5);
   transition: 0.6s;
 }
-
 #foto img:hover {
-  -webkit-filter: brightness(1);
-          filter: brightness(1);
+  filter: brightness(1);
 }
-
 #foto p {
   font-weight: 500;
   font-size: 24px;
@@ -268,13 +274,11 @@ video {
     padding-left: 4rem;
   }
 }
-
 form label {
   font-size: 15px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
 }
-
 form .btn {
   font-size: 16px;
 }
@@ -286,10 +290,8 @@ form .btn {
   border-radius: 15px !important;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .form-control:focus {
   background-color: #010101;
   color: #ffffff;
@@ -304,18 +306,14 @@ footer .brand-name a {
   font-size: 30px;
   font-weight: 800;
   color: #ffffff;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 footer .brand-name a:hover {
   color: #9BA39D;
 }
-
 footer p {
   font-size: 14px;
 }
-
 footer .icons a {
   position: relative;
   width: 40px;
@@ -324,24 +322,19 @@ footer .icons a {
   display: inline-block;
   margin: 0;
   padding: 0;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 footer .icons i {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 20px;
 }
-
 footer .btn-outline-light {
   color: #ffffff;
   border: 2px solid #ffffff !important;
 }
-
 footer .btn-outline-light:hover {
   color: #010101;
   border: 2px solid #ffffff !important;
@@ -357,11 +350,9 @@ footer .btn-outline-light:hover {
   left: 3%;
   padding-left: 0 !important;
 }
-
 .div-collection h1 {
   font-size: 40px;
 }
-
 .div-collection p {
   max-width: 35vw;
   font-weight: 500;
@@ -374,7 +365,6 @@ footer .btn-outline-light:hover {
     max-width: 45vw;
   }
 }
-
 @media (max-width: 575px) {
   .div-collection {
     top: 13%;
@@ -387,14 +377,15 @@ footer .btn-outline-light:hover {
     max-width: 100%;
     padding-right: 1rem;
   }
+
   .col-collection {
     padding-left: 0 !important;
   }
+
   .image-collection {
     padding: 2rem 1rem 1rem 1rem !important;
   }
 }
-
 .collection-back {
   top: 5%;
   left: 3%;
@@ -403,9 +394,7 @@ footer .btn-outline-light:hover {
 .collection-scroll {
   bottom: 2%;
   left: 3%;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   text-orientation: upright;
 }
 
@@ -413,16 +402,13 @@ footer .btn-outline-light:hover {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #ffffff !important;
   border: none;
 }
-
 .btn-back:hover {
   background-color: #ffffff;
 }
-
 .btn-back:hover i {
   color: #000000;
 }
@@ -451,23 +437,21 @@ footer .btn-outline-light:hover {
 
 @media (max-width: 992px) {
   .grid-sizer,
-  .grid-item {
+.grid-item {
     width: 25%;
   }
+
   .grid-item-2 {
     width: 50%;
   }
 }
-
 .left-side-animation {
-  -webkit-transform: translate(-400px, 0px);
-          transform: translate(-400px, 0px);
+  transform: translate(-400px, 0px);
   opacity: 0;
 }
 
 .right-side-animation {
-  -webkit-transform: translate(400px, 0px);
-          transform: translate(400px, 0px);
+  transform: translate(400px, 0px);
   opacity: 0;
 }
 
@@ -484,7 +468,7 @@ footer .btn-outline-light:hover {
   border-width: 0px;
 }
 
-.reveal-animation, #kontakt {
+.reveal-animation,
+#kontakt {
   opacity: 0;
 }
-/*# sourceMappingURL=style.css.map */

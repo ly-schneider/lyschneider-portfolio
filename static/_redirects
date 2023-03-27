@@ -1,0 +1,3 @@
+# Redirects
+http://lyschneider.netlify.app/*   https://www.lyschneider.ch/:splat  301!
+https://lyschneider.netlify.app/*   https://www.lyschneider.ch/:splat  301!
