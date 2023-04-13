@@ -33,7 +33,7 @@
     <link rel="icon" href="{{ .Site.Params.favicon | default `/img/favicon.png` }}">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" style="overflow: hidden;">
 
     {{ block "main" . }} {{ end }}
 
