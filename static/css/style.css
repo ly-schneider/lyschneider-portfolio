@@ -75,6 +75,15 @@ section.snap {
   box-shadow: 0px 0px 10px 0px #9E9912;
 }
 
+.btn-color-4 {
+  border-color: #D0A18C;
+  transition: 0.5s;
+}
+.btn-color-4:hover, .btn-color-4:focus {
+  background-color: #D0A18C;
+  box-shadow: 0px 0px 10px 0px #D0A18C;
+}
+
 @media (min-width: 815px) {
   .btn {
     font-size: 1.3rem;
@@ -218,25 +227,25 @@ video {
     left: -50px;
   }
 }
-#film hr {
+.film hr {
   border-radius: 5px;
 }
-#film p {
+.film p {
   font-weight: 500;
   font-size: 24px;
 }
-#film p:nth-of-type(2) {
+.film p:nth-of-type(2) {
   color: #9BA39D;
   font-size: 16px;
 }
-#film .btn {
+.film .btn {
   font-size: calc(0.5rem + 1vw);
   padding-right: calc(1rem + 4vw);
   padding-left: calc(1rem + 4vw);
 }
 
 @media (min-width: 1280px) {
-  #film .btn {
+  .film .btn {
     font-size: 18px;
     padding-right: 4rem;
     padding-left: 4rem;
@@ -423,6 +432,10 @@ footer .btn-outline-light:hover {
 
 .btn-b-color-3 {
   background-color: #9E9912;
+}
+
+.btn-b-color-4 {
+  background-color: #D0A18C;
 }
 
 .grid-sizer,

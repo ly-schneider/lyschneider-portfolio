@@ -99,6 +99,17 @@ section.snap {
     }
 }
 
+.btn-color-4 {
+    border-color: #D0A18C;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+        background-color: #D0A18C;
+        box-shadow: 0px 0px 10px 0px #D0A18C;
+    }
+}
+
 @media (min-width: 815px) {
     .btn {
         font-size: 1.3rem;
@@ -256,7 +267,7 @@ video {
 }
 
 // ----- Film ----- //
-#film {
+.film {
     hr {
         border-radius: 5px;
     }
@@ -279,7 +290,7 @@ video {
 }
 
 @media (min-width: 1280px) {
-    #film .btn {
+    .film .btn {
         font-size: 18px;
         padding-right: 4rem;
         padding-left: 4rem;
@@ -501,6 +512,10 @@ footer {
 
 .btn-b-color-3 {
     background-color: #9E9912;
+}
+
+.btn-b-color-4 {
+    background-color: #D0A18C;
 }
 
 // Grid
